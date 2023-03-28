@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Aleksej Demianenko](https://up.htmlacademy.ru/adaptive/28/user/2277143).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/id904531).
 
 ---
 
