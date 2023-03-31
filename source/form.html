@@ -62,21 +62,21 @@
             <h3 class="visually-hidden">Цель кота.</h3>
             <ul class="target__list">
               <li class="target__item">
-                <label class="target__item-element">
+                <label class="target__field">
                   <input class="target__control" type="radio" name="program" value="slim" checked>
-                  <span class="target__description">Похудение</span>
+                  <span class="target__name">Похудение</span>
                 </label>
               </li>
               <li class="target__item">
-                <label class="target__item-element">
+                <label class="target__field">
                   <input class="target__control" type="radio" name="program" value="pro">
-                  <span class="target__description">Набор массы</span>
+                  <span class="target__name">Набор массы</span>
                 </label>
               </li>
               <li class="target__item">
-                <label class="target__item-element">
+                <label class="target__field">
                   <input class="target__control" type="radio" name="program" value="advice">
-                  <span class="target__description">Не знаю (Нужен ваш совет)</span>
+                  <span class="target__name">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
@@ -84,19 +84,19 @@
           <div class="form__item form__item--conection conection">
             <h3 class="conection-title">Контактные данные (владельца кота)</h3>
             <label class="conection__field">
-              <span class="conection__field-name">E-mail:*</span>
-              <input class="conection__field-control" type="email" name="email" placeholder="kuklachev@gmail.com"
+              <span class="conection__name">E-mail:*</span>
+              <input class="conection__control" type="email" name="email" placeholder="kuklachev@gmail.com"
                 required>
             </label>
             <label class="conection__field">
-              <span class="conection__field-name">Телефон:*</span>
-              <input class="conection__field-control" type="number" name="phone" placeholder="8 (960) 900-60-90"
+              <span class="conection__name">Телефон:*</span>
+              <input class="conection__control" type="number" name="phone" placeholder="8 (960) 900-60-90"
                 required>
             </label>
           </div>
           <div class="form__item form__item--comment comment">
             <h3 class="comment-title">Комментарий</h3>
-            <textarea class="comment-area" name="additional" placeholder="Расскажите обо всех повадках кота">
+            <textarea class="comment-area" name="adout-cat" placeholder="Расскажите обо всех повадках кота">
              </textarea>
           </div>
           <div class="form__item form__item--addition addition">
@@ -104,30 +104,31 @@
               <li class="addition__item">
                 <label class="addition__field">
                   <input class="addition__control" type="checkbox" name="sweetener" checked>
-                  <span>Cахарозаменитель</span>
+                  <span class="addition__name">Cахарозаменитель</span>
                 </label>
               </li>
               <li class="addition__item">
                 <label class="addition__field">
                   <input class="addition__control" type="checkbox" name="water">
-                  <span>Питьевая вода</span>
+                  <span class="addition__name">Питьевая вода</span>
                 </label>
               </li>
               <li class="addition__item">
                 <label class="addition__field">
                   <input class="addition__control" type="checkbox" name="milk">
-                  <span>Молоко</span>
+                  <span class="addition__name">Молоко</span>
                 </label>
               </li>
               <li class="addition__item">
                 <label class="addition__field">
                   <input class="addition__control" type="checkbox" name="vitamins">
-                  <span>Витамины</span>
+                  <span class="addition__name">Витамины</span>
                 </label>
               </li>
             </ul>
           </div>
-          <button class="button form__item__send" type="submit">Отправить заявку</button>
+          <button class="button button--mobile form__item__send" type="submit">Отправить заявку</button>
+          <span class="form__item__information">* — Обязательные поля</span>
         </form>
       </section>
      </div>
@@ -136,10 +137,10 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts">
         <div class="contacts__address">
-          <span class="contacts__address__invite">Приглашаем к сотрудничеству дилеров!</span>
-          <div class="contacts__address-wrapper">
-            <p class="contacts__address__description">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="contacts__address__description">Санкт-Петербург</p>
+          <span class="contacts__invite">Приглашаем к сотрудничеству дилеров!</span>
+          <div class="contacts__wrapper">
+            <p class="contacts__description">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__description">Санкт-Петербург</p>
           </div>
         </div>
         <div class="contacts__map map">
