@@ -24,7 +24,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
@@ -36,7 +36,102 @@
       </div>
     </nav>
   </header>
-
+  <main class="main-container">
+    <div class="page-container">
+      <h1 class="page__title">Подбор программы</h1>
+      <p class="page__descripion">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <section class="form">
+        <h2 class="visually-hidden">Форма подбора программы.</h2>
+        <form class="form__list" action="http://echo.htmlacademy.ru" method="get">
+          <div class="form__item form__item--personality personality">
+            <h3 class="visually-hidden">Данные кота.</h3>
+            <label class="personality__field">
+              <span class="personality__field-name">Имя:*</span>
+              <input class="personality__field-control" type="text" name="name" placeholder="Барсик" required>
+            </label>
+            <label class="personality__field">
+              <span class="personality__field-name">Вес (кг):*</span>
+              <input class="personality__field-control" type="number" name="weight" placeholder="7" required>
+            </label>
+            <label class="personality__field">
+              <span class="personality__field-name">Возраст (лет):</span>
+              <input class="personality__field-control" type="number" name="age" placeholder="7">
+            </label>
+          </div>
+          <div class="form__item form__item--target target">
+            <h3 class="visually-hidden">Цель кота.</h3>
+            <ul class="target__list">
+              <li class="target__item">
+                <label class="target__item-element">
+                  <input class="target__control" type="radio" name="program" value="slim" checked>
+                  <span class="target__description">Похудение</span>
+                </label>
+              </li>
+              <li class="target__item">
+                <label class="target__item-element">
+                  <input class="target__control" type="radio" name="program" value="pro">
+                  <span class="target__description">Набор массы</span>
+                </label>
+              </li>
+              <li class="target__item">
+                <label class="target__item-element">
+                  <input class="target__control" type="radio" name="program" value="advice">
+                  <span class="target__description">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form__item form__item--conection conection">
+            <h3 class="conection-title">Контактные данные (владельца кота)</h3>
+            <label class="conection__field">
+              <span class="conection__field-name">E-mail:*</span>
+              <input class="conection__field-control" type="email" name="email" placeholder="kuklachev@gmail.com"
+                required>
+            </label>
+            <label class="conection__field">
+              <span class="conection__field-name">Телефон:*</span>
+              <input class="conection__field-control" type="number" name="phone" placeholder="8 (960) 900-60-90"
+                required>
+            </label>
+          </div>
+          <div class="form__item form__item--comment comment">
+            <h3 class="comment-title">Комментарий</h3>
+            <textarea class="comment-area" name="additional" placeholder="Расскажите обо всех повадках кота">
+             </textarea>
+          </div>
+          <div class="form__item form__item--addition addition">
+            <ul class="addition__list">
+              <li class="addition__item">
+                <label class="addition__field">
+                  <input class="addition__control" type="checkbox" name="sweetener" checked>
+                  <span>Cахарозаменитель</span>
+                </label>
+              </li>
+              <li class="addition__item">
+                <label class="addition__field">
+                  <input class="addition__control" type="checkbox" name="water">
+                  <span>Питьевая вода</span>
+                </label>
+              </li>
+              <li class="addition__item">
+                <label class="addition__field">
+                  <input class="addition__control" type="checkbox" name="milk">
+                  <span>Молоко</span>
+                </label>
+              </li>
+              <li class="addition__item">
+                <label class="addition__field">
+                  <input class="addition__control" type="checkbox" name="vitamins">
+                  <span>Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <button class="button form__item__send" type="submit">Отправить заявку</button>
+        </form>
+      </section>
+     </div>
+  </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts">
@@ -60,7 +155,7 @@
         </div>
       </div>
       <div class="main-footer__logo">
-        <a class="main-footer__logo-link" href="#">
+        <a class="main-footer__logo-link" href="index.html">
           <img class="main-footer__logo-image" src="img/footer/footer__logo.svg" width="128" height="24"
             alt="Сайт «Кэт энерджи».">
         </a>
