@@ -8,7 +8,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/header/header__logo-mobile.svg" width="33" height="38"
         alt="Сайт «Кэт энерджи».">
       <img class="main-header__logo-image" src="img/header/header__logo-mobile-name.svg" width="101" height="18"
@@ -24,10 +24,10 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="#">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -36,8 +36,58 @@
       </div>
     </nav>
   </header>
+  <main class="main-container">
+    <div class="page-container">
+      <h1 class="visually-hidden">Кэт энерджи каталог</h1>
+      <section class="catalog">
+        <h2 class="catalog__title">Каталог продукции</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <div class="catalog__item catalog__item--product product">
+              <a class="product__link" href="#">
+                <img class="product__image" src="img/catalog/catalog__chicken-500.png" width="68" height="86"
+                  alt="Корм курица 500гр.">
+              </a>
+            </div>
+            <div class="catalog__item catalog__item--description description">
+              <h3 class="description__title">Cat Energy PRO 500 г</h3>
+              <table class="description__table">
+                <tr class="description____row">
+                  <td class="description__name">Масса</td>
+                  <td class="description__value">500 г</td>
+                </tr>
+                <tr class="description__row">
+                  <td class="description__name">Вкус</td>
+                  <td class="description__value">Курица</td>
+                </tr>
+                <tr class="description__row">
+                  <td class="description__name">Цена</td>
+                  <td class="description__value">700 ₽</td>
+                </tr>
+              </table>
+            </div>
+            <div class="catalog__item catalog__item--order order">
+              <a class="button button--mobile order">Заказать</a>
+            </div>
+          </li>
 
-  
+        </ul>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts">
@@ -61,7 +111,7 @@
         </div>
       </div>
       <div class="main-footer__logo">
-        <a class="main-footer__logo-link" href="#">
+        <a class="main-footer__logo-link" href="index.html">
           <img class="main-footer__logo-image" src="img/footer/footer__logo.svg" width="128" height="24"
             alt="Сайт «Кэт энерджи».">
         </a>
