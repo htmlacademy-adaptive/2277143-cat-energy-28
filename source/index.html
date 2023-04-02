@@ -9,8 +9,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo-image" src="img/header/logo-mobile.svg" width="191" height="38"
-        alt="Сайт «Кэт энерджи».">
+      <img class="logo-image" src="img/header/logo-mobile.svg" width="191" height="38" alt="Сайт «Кэт энерджи».">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -34,7 +33,7 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="page__main">
     <h1 class="visually-hidden">Сайт «Кэт энерджи».</h1>
     <section class="promo">
       <div class="promo__wrapper">
@@ -42,15 +41,13 @@
           <h2 class="promo__title">Функциональноепитание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
         </header>
-        <a class="promo__product" href="#">
-          <img class="promo__product-image" src="img/index/main__promo.png" width="280" height="270"
-            alt="Корм с курицей 500 грамм.">
-        </a>
-        <a class="button button--mobile promo__program" href="form.html">Подобрать программу</a>
+        <img class="promo__product-image" src="img/index/promo.png" width="280" height="270"
+          alt="Корм с курицей 500 грамм.">
+        <a class="button promo__link" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="program">
-      <div class="program__wrapper">
+      <div class="container">
         <h2 class="visually-hidden">Методики.</h2>
         <ul class="program__list">
           <li class="program__item program__item--slim">
@@ -81,7 +78,7 @@
       </div>
     </section>
     <section class="advantages">
-      <div class="advantages__wrapper">
+      <div class="container">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--benefit">
@@ -101,57 +98,54 @@
       </div>
     </section>
     <section class="example">
-      <div class="example__wrapper">
+      <div class="container">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16 часов в день.
         </p>
-        <div class="example__data data">
-          <fieldset class="data__component">
-            <legend class="data__legend">снижение веса</legend>
-            <p class="data__index">5 КГ</p>
-          </fieldset>
-          <fieldset class="data__component">
-            <legend class="data__legend">затрачено времени</legend>
-            <p class="data__index">60 ДНЕЙ</p>
-          </fieldset>
-        </div>
-        <div class="example__costs costs">
-          <span class="costs__title">Затраты на питание:</span>
-          <span class="costs__price"> 15 000 РУБ.</span>
+        <ul class="example__list">
+          <li class="example__item">
+            <span class="example__data">снижение веса</span>
+            <p class="example__index">5 кг</p>
+          </li>
+          <li class="example__item">
+            <span class="example__data">затрачено времени</span>
+            <p class="example__index">60 дней</p>
+          </li>
+        </ul>
+        <div class="example__cost">
+          <span class="example__expens">Затраты на питание:</span>
+          <span class="example__price"> 15 000 руб.</span>
         </div>
         <div class="example__slider">
-          <img class="example__image example__image--pro" src="img/index/main__slider-mobile__big-cat.png" width="280" height="256"
+          <img class="example__image example__image--pro" src="img/index/thick-cat.png" width="280" height="256"
             alt="Кот до похудение">
-          <img class="example__image example__image--slim" src="img/index/main__slider-mobile__small-cat.png" width="280" height="256"
+          <img class="example__image example__image--slim" src="img/index/thin-cat.png" width="280" height="256"
             alt="Кот после похудение">
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__address">
+        <span class="map__invite">Приглашаем к сотрудничеству дилеров!</span>
+        <div class="map__wrapper">
+          <p class="map__description">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="map__description">Санкт-Петербург</p>
+        </div>
+      </div>
+      <div class="map__view">
+        <div class="map__yandex" style="position:relative;overflow:hidden;">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
+            width="320" height="362" frameborder="1" allowfullscreen="true" style="position:relative;">
+          </iframe>
         </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts">
-        <div class="contacts__address">
-          <span class="contacts__invite">Приглашаем к сотрудничеству дилеров!</span>
-          <div class="contacts__wrapper">
-            <p class="contacts__description">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="contacts__description">Санкт-Петербург</p>
-          </div>
-        </div>
-        <div class="contacts__map map">
-          <div class="map__yandex" style="position:relative;overflow:hidden;"><a
-              href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-              style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-              href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&utm_medium=mapframe&utm_source=maps&z=16.59"
-              style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 —
-              Яндекс Карты</a><iframe
-              src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
-              width="320" height="362" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-          </div>
-        </div>
-      </div>
       <div class="main-footer__logo">
         <a class="main-footer__logo-link" href="#">
           <img class="main-footer__logo-image" src="img/footer/footer__logo.svg" width="128" height="24"
