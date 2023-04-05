@@ -1,0 +1,33 @@
+.promo {
+  padding: 27px 0 20px 0;
+
+  &__header {
+    text-align: center;
+    background-image: url(/img/index/background-cat.png);
+  }
+
+  &__title {
+    line-height: 36px;
+    margin: 0 15px 25px 15px;
+    padding: 0;
+  }
+
+  &__slogan {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 0 29px 0;
+    padding: 0;
+    text-transform: uppercase;
+    padding-bottom: 182px;
+  }
+
+  &__product-image {
+    display: block;
+    margin: 0 auto 5px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    margin: 0 auto;
+  }
+}

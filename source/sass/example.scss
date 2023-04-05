@@ -1,0 +1,52 @@
+.example {
+  margin: 0;
+  padding: 25px 0 40px 0;
+
+  &__title {
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+
+  &__description {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+  }
+
+  &__list {
+    margin: 0 0 10px 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__index {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__data {
+    font-family: 'Lato';
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #444444;
+  }
+
+  &__cost {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+
+}

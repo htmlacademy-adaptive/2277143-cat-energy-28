@@ -1,0 +1,28 @@
+.advantages {
+  padding-bottom: 50px;
+
+  &__title {
+    margin: 0 0 40px 0;
+    padding: 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0 0 0 80px;
+    font-family: "Lato";
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0;
+  }
+}
