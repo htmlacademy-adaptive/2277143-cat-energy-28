@@ -1,0 +1,29 @@
+.form-field {
+  padding-bottom: 24px;
+
+  &--contact {
+    padding-bottom: 0;
+  }
+
+  &__container {
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #444444;
+  }
+
+  &__name {
+    margin-right: 13px;
+
+    &--contact {
+      margin-right: 10px;
+    }
+  }
+
+  &__control {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

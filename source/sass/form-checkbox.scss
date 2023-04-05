@@ -1,0 +1,15 @@
+.form-checkbox {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+  }
+
+  &__control {
+    padding-right: 16px;;
+  }
+}

@@ -1,0 +1,23 @@
+.form {
+  padding-bottom: 32px;
+
+  &__title {
+    margin: 25px 0 36px;
+    font-size: 24px;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  &__send {
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: 21px;
+  }
+
+  &__information {
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

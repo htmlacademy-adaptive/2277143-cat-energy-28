@@ -1,0 +1,21 @@
+.form-radio {
+  padding: 20px 0;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  &__control {
+    margin-right: 15px;
+  }
+
+}
