@@ -1,0 +1,46 @@
+.product {
+  &__image-link {
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  &__image {
+    &--more {
+      display: block;
+      margin: 25px auto 23px;
+    }
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0 0 18px 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #222222;
+
+    &--more {
+      margin: 0 0 8px 0;
+      text-align: center;
+    }
+  }
+
+  &__table {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #444444;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  &__add {
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+}
