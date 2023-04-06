@@ -1,13 +1,12 @@
 .product {
   &__image-link {
     display: block;
-    margin-bottom: 14px;
   }
 
   &__image {
     &--more {
       display: block;
-      margin: 25px auto 23px;
+      margin: 25px auto;
     }
   }
 
@@ -33,6 +32,7 @@
     color: #444444;
     padding: 0;
     margin: 0 0 20px 0;
+    text-align: left;
   }
 
   &__add {
