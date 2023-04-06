@@ -1,33 +1,42 @@
 .promo {
-  padding: 27px 0 20px 0;
+  padding-bottom: 20px;
 
   &__header {
     text-align: center;
     background-image: url("/img/index/background-cat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 27px;
+    padding-bottom: 132px;
+    margin-bottom: 138px;
   }
 
-  &__title {
+  & h2 {
     line-height: 36px;
-    margin: 0 15px 25px 15px;
+    margin: 0 35px 25px 35px;
     padding: 0;
+    color: #ffffff;
   }
 
   &__slogan {
-    font-size: 14px;
     line-height: 14px;
-    margin: 0 0 29px 0;
+    margin: 0 0 30px 0;
     padding: 0;
     text-transform: uppercase;
-    padding-bottom: 182px;
+    color: #ffffff;
   }
 
   &__product-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
-    margin: 0 auto 5px;
     text-transform: uppercase;
   }
 
   &__link {
-    margin: 0 auto;
+    margin: 0 20px;
   }
 }

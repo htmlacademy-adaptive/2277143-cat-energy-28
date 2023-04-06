@@ -39,6 +39,9 @@
   &__gift {
     padding: 60px 60px 48px 60px;
     background-image: url("/img/catalog/gift-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     &-image {
       display: block;
