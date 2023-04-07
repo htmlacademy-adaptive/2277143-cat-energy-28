@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+.map__address {
+  padding: 26px 20px;
+}
+
+.map__invite {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.map__description {
+  margin: 0;
+  padding: 0;
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}

@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+@use "source/sass/block/global";
+@use "source/sass/block/variables";
+@use "fonts";
+@use "source/sass/block/button";
+@use "source/sass/block/visually-hidden";
+@use "source/sass/block/page";
+@use "source/sass/block/main-header";
+@use "source/sass/block/container";
+@use "source/sass/block/logo";
+@use "source/sass/block/main-nav";
+@use "source/sass/block/site-list";
+@use "source/sass/block/promo.scss";
+@use "source/sass/block/program";
+@use "source/sass/block/advantages";
+@use "source/sass/block/example";
+@use "source/sass/block/map";
+@use "source/sass/block/catalog";
+@use "source/sass/block/product";
+@use "source/sass/block/extra";
+@use "source/sass/block/form";
+@use "source/sass/block/form-field";
+@use "source/sass/block/form-radio";
+@use "source/sass/block/form-checkbox";
+@use "source/sass/block/form-textarea";
+@use "source/sass/block/main-footer";
+@use "source/sass/block/social";

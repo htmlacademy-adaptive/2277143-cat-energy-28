@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+.example {
+  margin: 0;
+  padding: 25px 0 40px 0;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  padding: 0;
+  margin: 0 0 40px 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__list {
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.example__index {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__data {
+  font-family: $second-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
+}
+
+.example__cost {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

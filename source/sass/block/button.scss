@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+.button {
+  display: block;
+  line-height: 18px;
+  padding: 11px 44px;
+  background-color: #68b738;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+
+  &--more {
+    background-color: $color-white;
+    color: #444444;
+  }
+}

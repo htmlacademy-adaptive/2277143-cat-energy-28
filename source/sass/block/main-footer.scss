@@ -1,0 +1,32 @@
+@use "variables" as *;
+
+.main-footer {
+  padding: 20px 0;
+}
+
+.main-footer__logo-link {
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main-footer__social {
+  padding: 20px 0;
+  margin: 0;
+}
+
+.main-footer__developer {
+  display: block;
+  text-decoration: none;
+  padding: 20px 0;
+  font-family: $second-font;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+
+.main-footer__developer-name {
+  display: block;
+  padding: 0;
+  margin: 0;
+}

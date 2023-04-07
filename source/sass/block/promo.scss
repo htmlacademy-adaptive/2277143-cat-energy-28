@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+.promo {
+  padding-bottom: 20px;
+}
+
+.promo__header {
+  text-align: center;
+  background-image: url("/img/index/background-cat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 132px;
+  margin-bottom: 138px;
+}
+
+.promo__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 35px 25px 35px;
+  padding: 0;
+  color: $color-white;
+}
+
+.promo__slogan {
+  line-height: 14px;
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.promo__product-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  margin: 0 20px;
+}

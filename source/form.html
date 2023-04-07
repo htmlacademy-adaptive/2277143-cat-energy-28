@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -39,7 +40,7 @@
     <section class="form">
       <div class="container">
         <h2 class="visually-hidden">Форма подбора программы.</h2>
-        <form class="form__field" action="http://echo.htmlacademy.ru" method="get">
+        <form class="form__list" action="http://echo.htmlacademy.ru" method="get">
           <div class="form__item form-field">
             <h3 class="visually-hidden">Данные кота.</h3>
             <label class="form-field__container">
@@ -78,14 +79,14 @@
               </li>
             </ul>
           </div>
-          <div class="form__item form-field">
+          <div class="form__item form-field form-field--contact">
             <h3 class="form__title">Контактные данные (владельца кота)</h3>
             <label class="form-field__container">
-              <span class="form-field__name">E-mail:*</span>
+              <span class="form-field__name form-field__name--contact">E-mail:*</span>
               <input class="form-field__control" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </label>
             <label class="form-field__container">
-              <span class="form-field__name">Телефон:*</span>
+              <span class="form-field__name form-field__name--contact">Телефон:*</span>
               <input class="form-field__control" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
             </label>
           </div>
