@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .product__image-link {
   display: block;
 }
@@ -25,7 +27,7 @@
 }
 
 .product__table {
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -36,7 +38,7 @@
 
 .product__add {
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   font-size: 12px;
   line-height: 16px;
   margin: 0 0 20px 0;

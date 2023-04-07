@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .promo {
   padding-bottom: 20px;
 }
@@ -20,7 +22,7 @@
   line-height: 36px;
   margin: 0 35px 25px 35px;
   padding: 0;
-  color: #ffffff;
+  color: $color-white;
 }
 
 .promo__slogan {
@@ -28,7 +30,7 @@
   margin: 0 0 30px 0;
   padding: 0;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $color-white;
 }
 
 .promo__product-image {
@@ -42,4 +44,3 @@
 .promo__link {
   margin: 0 20px;
 }
-

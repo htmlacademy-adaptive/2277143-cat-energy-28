@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .main-footer {
   padding: 20px 0;
 }
@@ -17,7 +19,7 @@
   display: block;
   text-decoration: none;
   padding: 20px 0;
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   font-size: 16px;
   line-height: 19px;
   color: #444444;

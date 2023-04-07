@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .advantages {
   padding-bottom: 50px;
 }
@@ -19,7 +21,7 @@
 .advantages__item {
   margin: 0;
   padding: 0 0 0 80px;
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
   color: #444444;

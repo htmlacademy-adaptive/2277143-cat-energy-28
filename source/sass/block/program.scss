@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .program {
   padding: 0;
   margin: 0 0 20px 0;
@@ -27,7 +29,7 @@
 
 .program__description {
   margin: 0 0 38px 0;
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
   color: #444444;

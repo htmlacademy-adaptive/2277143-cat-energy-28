@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .example {
   margin: 0;
   padding: 25px 0 40px 0;
@@ -15,7 +17,7 @@
 .example__description {
   margin: 0 0 20px 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -38,7 +40,7 @@
 }
 
 .example__data {
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   font-size: 12px;
   line-height: 12px;
   text-align: center;

@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .form {
   padding-bottom: 32px;
 }
@@ -19,7 +21,7 @@
 .form__information {
   display: block;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: $second-font;
   font-size: 14px;
   line-height: 16px;
 }

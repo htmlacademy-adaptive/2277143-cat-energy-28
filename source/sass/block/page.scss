@@ -1,5 +1,7 @@
+@use "variables" as *;
+
 .page {
-  background-color: #ffffff;
+  background-color: $color-white;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
