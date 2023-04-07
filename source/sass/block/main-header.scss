@@ -1,5 +1,45 @@
+@use "variables" as *;
+
 .main-header {
+  display: flex;
+  justify-content: space-between;
   font-weight: 500;
   padding: 10px 20px 17px;
   margin: 0;
+}
+
+.main-header__logo {
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 60px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 478px;
+    justify-content: space-between;
+  }
 }

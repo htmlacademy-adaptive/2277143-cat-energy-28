@@ -11,12 +11,15 @@
 }
 
 .main-footer__social {
+  display: flex;
+  justify-content: space-around;
   padding: 20px 0;
   margin: 0;
 }
 
 .main-footer__developer {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
   padding: 20px 0;
   font-family: $second-font;
