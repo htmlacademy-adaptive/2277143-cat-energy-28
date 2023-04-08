@@ -33,13 +33,13 @@
 .main-nav__list {
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 440px;
+    min-width: 440px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 478px;
+    min-width: 478px;
     justify-content: space-between;
   }
 }

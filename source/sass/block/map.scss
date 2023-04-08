@@ -2,6 +2,19 @@
 
 .map__address {
   padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    margin-left: 110px;
+    margin-top: 90px;
+  }
 }
 
 .map__invite {
@@ -18,3 +31,10 @@
   line-height: 20px;
   color: #444444;
 }
+
+.map__yandex {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+

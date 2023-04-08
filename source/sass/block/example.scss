@@ -6,6 +6,13 @@
   background-color: #eaeaea;
 }
 
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
 .example__title {
   padding: 0;
   margin: 0 0 40px 0;
@@ -23,6 +30,19 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+}
+
+.example__wrapper-cost {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .example__list {
@@ -31,6 +51,10 @@
   margin: 0 0 10px 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .example__index {
@@ -55,4 +79,22 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 80px;
+  }
+}
+
+.example__slider {
+  display: flex;
+  justify-content: space-around;
+
 }

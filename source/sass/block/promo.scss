@@ -38,11 +38,13 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
+    position: absolute;
+    top: 0;
+    left: 20%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 190px;
-    text-align: left;
+    left: 190px;
   }
 }
 
@@ -55,11 +57,13 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
+    position: absolute;
+    top: 35%;
+    left: 23%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 190px;
-    text-align: left;
+    left: 230px;
   }
 }
 
@@ -70,22 +74,26 @@
   display: block;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    top: 80px;
+  }
+
   @media (min-width: $desktop-width) {
     left: 60%;
-    top: 0;
+    top: -20px;
   }
 }
 
 .promo__link {
-  margin: 0 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 250px;
-    left: 20%;
+    top: 200px;
+    left: 22%;
   }
 
   @media (min-width: $desktop-width) {
-    left: 190px;
+    left: 230px;
   }
 }
