@@ -14,6 +14,18 @@
   padding-top: 27px;
   padding-bottom: 132px;
   margin-bottom: 138px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    background-image: url("/img/index/background-cat.png");
+    background-position: right;
+    background-size: 50vw 100%;
+  }
 }
 
 .promo__title {
@@ -23,6 +35,15 @@
   margin: 0 35px 25px 35px;
   padding: 0;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    text-align: left;
+  }
 }
 
 .promo__slogan {
@@ -31,6 +52,15 @@
   padding: 0;
   text-transform: uppercase;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
+    text-align: left;
+  }
 }
 
 .promo__product-image {
@@ -39,8 +69,23 @@
   transform: translateX(-50%);
   display: block;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    left: 60%;
+    top: 0;
+  }
 }
 
 .promo__link {
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 250px;
+    left: 20%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 190px;
+  }
 }
