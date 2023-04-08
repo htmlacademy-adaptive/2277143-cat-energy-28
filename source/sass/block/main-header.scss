@@ -6,6 +6,14 @@
   font-weight: 500;
   padding: 10px 20px 17px;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+  }
 }
 
 .main-header__logo {
