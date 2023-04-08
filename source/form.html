@@ -42,54 +42,58 @@
       <div class="container">
         <h2 class="visually-hidden">Форма подбора программы.</h2>
         <form class="form__list" action="http://echo.htmlacademy.ru" method="get">
-          <div class="form__item form-field">
-            <h3 class="visually-hidden">Данные кота.</h3>
-            <label class="form-field__container">
-              <span class="form-field__name">Имя:*</span>
-              <input class="form-field__control" type="text" name="name" placeholder="Барсик" required>
-            </label>
-            <label class="form-field__container">
-              <span class="form-field__name">Вес (кг):*</span>
-              <input class="form-field__control" type="text" name="weight" placeholder="7" required>
-            </label>
-            <label class="form-field__container">
-              <span class="form-field__name">Возраст (лет):</span>
-              <input class="form-field__control" type="text" name="age" placeholder="7">
-            </label>
-          </div>
-          <div class="form__item form-radio">
-            <h3 class="visually-hidden">Цель кота.</h3>
-            <ul class="form-radio__list">
-              <li class="form-radio__item">
-                <label class="form-radio__field">
-                  <input class="form-radio__control" type="radio" name="program" value="slim" checked>
-                  <span class="form-radio__name">Похудение</span>
-                </label>
-              </li>
-              <li class="form-radio__item">
-                <label class="form-radio__field">
-                  <input class="form-radio__control" type="radio" name="program" value="pro">
-                  <span class="form-radio__name">Набор массы</span>
-                </label>
-              </li>
-              <li class="form-radio__item">
-                <label class="form-radio__field">
-                  <input class="form-radio__control" type="radio" name="program" value="advice">
-                  <span class="form-radio__name">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
+          <div class="form__wrapper">
+            <div class="form__item form-field">
+              <h3 class="visually-hidden">Данные кота.</h3>
+              <label class="form-field__container">
+                <span class="form-field__name">Имя:*</span>
+                <input class="form-field__control" type="text" name="name" placeholder="Барсик" required>
+              </label>
+              <label class="form-field__container">
+                <span class="form-field__name">Вес (кг):*</span>
+                <input class="form-field__control" type="text" name="weight" placeholder="7" required>
+              </label>
+              <label class="form-field__container">
+                <span class="form-field__name">Возраст (лет):</span>
+                <input class="form-field__control" type="text" name="age" placeholder="7">
+              </label>
+            </div>
+            <div class="form__item form-radio">
+              <h3 class="visually-hidden">Цель кота.</h3>
+              <ul class="form-radio__list">
+                <li class="form-radio__item">
+                  <label class="form-radio__field">
+                    <input class="form-radio__control" type="radio" name="program" value="slim" checked>
+                    <span class="form-radio__name">Похудение</span>
+                  </label>
+                </li>
+                <li class="form-radio__item">
+                  <label class="form-radio__field">
+                    <input class="form-radio__control" type="radio" name="program" value="pro">
+                    <span class="form-radio__name">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form-radio__item">
+                  <label class="form-radio__field">
+                    <input class="form-radio__control" type="radio" name="program" value="advice">
+                    <span class="form-radio__name">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="form__item form-field form-field--contact">
             <h3 class="form__title">Контактные данные (владельца кота)</h3>
-            <label class="form-field__container">
-              <span class="form-field__name form-field__name--contact">E-mail:*</span>
-              <input class="form-field__control" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="form-field__container">
-              <span class="form-field__name form-field__name--contact">Телефон:*</span>
-              <input class="form-field__control" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <div class="form__fild-wrapper">
+              <label class="form-field__container">
+                <span class="form-field__name form-field__name--contact">E-mail:*</span>
+                <input class="form-field__control" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="form-field__container">
+                <span class="form-field__name form-field__name--contact">Телефон:*</span>
+                <input class="form-field__control" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </div>
           <div class="form__item form-textarea">
             <h3 class="form__title">Комментарий</h3>
@@ -125,8 +129,10 @@
               </li>
             </ul>
           </div>
-          <button class="button form__send" type="submit">Отправить заявку</button>
-          <span class="form__information">* — Обязательные поля</span>
+          <div class="form__item form-send">
+            <button class="button form__send-btn" type="submit">Отправить заявку</button>
+            <span class="form__send-information">* — Обязательные поля</span>
+          </div>
         </form>
       </div>
     </section>
@@ -143,14 +149,14 @@
         <div class="map__yandex" style="position:relative;overflow:hidden;">
           <iframe
             src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
-            width="320" height="362" frameborder="1" allowfullscreen="true" style="position:relative;">
+            width="100%" height="362" frameborder="1" allowfullscreen="true" style="position:relative;">
           </iframe>
         </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="container">
+    <div class="container main-footer__container">
       <a class="main-footer__logo-link" href="#">
         <img class="main-footer__logo-image" src="img/footer/logo-name.svg" width="128" height="24"
           alt="Сайт «Кэт энерджи».">

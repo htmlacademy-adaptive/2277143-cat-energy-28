@@ -12,16 +12,17 @@
   font-weight: 400;
 }
 
-.form__send {
-  border: none;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+.form__wrapper {
+  @media (min-width: $desktop-width){
+    width: 100%;
+    display: flex;
+    column-gap: 80px;
+    justify-content: space-between;
+  }
 }
 
-.form__information {
-  display: block;
-  text-align: center;
-  font-family: $second-font;
-  font-size: 14px;
-  line-height: 16px;
+.form__item {
+  @media (min-width: $desktop-width){
+    min-width: 570px;
+  }
 }
