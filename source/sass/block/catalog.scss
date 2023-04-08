@@ -1,7 +1,16 @@
+@use "variables" as *;
+
 .catalog__list {
   padding: 0 0 10px 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    justify-content: center;
+    gap: 60px;
+  }
 }
 
 .catalog__item {
