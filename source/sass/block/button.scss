@@ -10,15 +10,11 @@
   text-align: center;
   font-size: 14px;
   text-decoration: none;
-  width: 280px;
+  width: 100%;
+  border: none;
 
   &--more {
     background-color: $color-white;
     color: #444444;
-  }
-  
-  @media (min-width: $desktop-width) {
-    width: 244px;
-    padding: 18px 44px;
   }
 }

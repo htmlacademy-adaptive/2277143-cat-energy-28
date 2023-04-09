@@ -98,10 +98,13 @@
     position: absolute;
     top: 200px;
     left: 22%;
+    width: 245px;
   }
 
   @media (min-width: $desktop-width) {
     left: 230px;
     top: 320px;
+    width: 245px;
+    padding: 18px 44px;
   }
 }

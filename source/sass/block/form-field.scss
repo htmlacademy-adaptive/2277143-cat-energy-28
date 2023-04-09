@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    column-gap: 80px;
   }
 }
 
@@ -21,6 +22,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form-field__name {

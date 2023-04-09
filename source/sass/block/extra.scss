@@ -16,6 +16,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     column-gap: 80px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -34,6 +36,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    column-gap: 40px;
   }
 }
 

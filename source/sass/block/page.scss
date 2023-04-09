@@ -19,7 +19,7 @@
 .page__title {
   font-size: 36px;
   line-height: 36px;
-  margin: 0 0 40px 20px;
+  margin: 0 0 40px 0;
   font-weight: 400;
 
   @media (min-width: $desktop-width) {
@@ -31,5 +31,5 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0 0 40px 20px;
+  margin: 0 0 40px 0;
 }
