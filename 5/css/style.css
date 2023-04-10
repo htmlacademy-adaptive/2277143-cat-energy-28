@@ -124,6 +124,9 @@
   }
 }
 
+.main-nav__toggle {
+  border: none;
+}
 @media (min-width: 769px) {
   .main-nav__toggle {
     display: none;
@@ -176,6 +179,11 @@
   padding: 0;
   margin: 0;
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .site-list {
+    display: none;
+  }
 }
 
 .site-list__item {
@@ -794,7 +802,7 @@
 
 .extra__gift {
   padding: 60px 60px 48px 60px;
-  background-image: url("/img/catalog/gift-background.png");
+  background-image: url("../img/catalog/gift-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
