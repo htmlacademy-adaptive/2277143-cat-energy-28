@@ -4,6 +4,10 @@
   padding: 0;
   margin: 0;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .site-list__item {

@@ -29,6 +29,8 @@
 }
 
 .main-nav__toggle {
+  border: none;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
