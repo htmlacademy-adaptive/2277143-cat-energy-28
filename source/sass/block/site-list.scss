@@ -18,10 +18,10 @@
 .site-list__link {
   text-decoration: none;
   color: #000000;
-}
 
-.site-list--index .site-list__link {
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 }
