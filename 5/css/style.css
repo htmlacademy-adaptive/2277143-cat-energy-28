@@ -191,9 +191,8 @@
   text-decoration: none;
   color: #000000;
 }
-
 @media (min-width: 1440px) {
-  .site-list--index .site-list__link {
+  .site-list__link--index {
     color: #ffffff;
   }
 }
