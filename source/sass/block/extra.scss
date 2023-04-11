@@ -15,9 +15,7 @@
 .extra__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    column-gap: 80px;
-    width: 1220px;
-    margin: 0 auto;
+    column-gap: 80px; 
   }
 }
 

@@ -30,6 +30,7 @@
 
 .form-field__name {
   margin-right: 13px;
+  flex-shrink: 0;
 
   &--contact {
     margin-right: 10px;
