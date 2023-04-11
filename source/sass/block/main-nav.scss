@@ -1,64 +1,21 @@
 @use "variables" as *;
 
 .main-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  min-height: 38px;
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 24px;
-  right: 20px;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-}
-
-.main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: auto;
-  left: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    width: 28px;
-    height: 2px;
-    background-color: #000000;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-.main-nav__wrapper {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-
   @media (min-width: $desktop-width) {
     width: 50%;
   }
 }
 
-.main-nav__toggle {
-  padding: 0;
-  display: block;
-  height: 38px;
-  width: 28px;
-  z-index: 2;
-  cursor: pointer;
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-width: 440px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    min-width: 478px;
+    justify-content: space-between;
+  }
 }

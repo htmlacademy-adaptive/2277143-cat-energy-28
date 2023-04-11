@@ -2,10 +2,15 @@
 
 .main-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   font-weight: 500;
   margin: 0;
   padding: 10px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -14,6 +19,11 @@
     width: 100%;
     background-color: transparent;
   }
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-header__logo {
@@ -28,8 +38,13 @@
   }
 }
 
-.main-nav__toggle {
+.main-header__toggle {
   border: none;
+  padding: 0;
+  height: 38px;
+  width: 28px;
+  margin-left: auto;
+  position: right;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -40,16 +55,39 @@
   }
 }
 
-.main-nav__list {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    min-width: 440px;
-    justify-content: space-between;
+.main-header--closed .main-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-header--opened .main-header__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 28px;
+    height: 2px;
+    background-color: #000000;
   }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    min-width: 478px;
-    justify-content: space-between;
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
