@@ -3,12 +3,22 @@
 .program {
   padding: 0;
   margin: 0 0 20px 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .program__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .program__item {
@@ -16,6 +26,10 @@
 
   &--slim {
     margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -24,7 +38,16 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0 0 30px 70px;
+  margin: 0 0 30px 0;
+  padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+  }
 }
 
 .program__description {
@@ -33,6 +56,14 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    width: 56%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .program__link {

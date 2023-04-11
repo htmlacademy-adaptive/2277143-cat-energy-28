@@ -1,28 +1,46 @@
 @use "variables" as *;
 
 .promo {
-  padding-bottom: 20px;
-}
-
-.promo__header {
   text-align: center;
-  background-image: url("/img/index/background-cat.png");
+  background-image: url("../img/index/background-cat.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  background-size: 100% auto;
+  background-position: cover;
   padding-top: 27px;
-  padding-bottom: 132px;
-  margin-bottom: 138px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    color: #000000;
+    padding-top: 64px;
+    padding-bottom: 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 128px;
+    padding-bottom: 267px;
+    background-image: url("../img/index/background-cat.png");
+    background-position: top right;
+    background-size: 50%;
+    color: #000000;
+  }
 }
 
 .promo__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  margin: 0 35px 25px 35px;
   padding: 0;
+  margin: 0 0 25px 0;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 40px 0;
+  }
 }
 
 .promo__slogan {
@@ -31,16 +49,51 @@
   padding: 0;
   text-transform: uppercase;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .promo__product-image {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   display: block;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: center;
+    left: 30%;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 0;
+    position: static;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+  }
 }
 
 .promo__link {
-  margin: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 18px 44px;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
 }

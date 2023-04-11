@@ -10,16 +10,28 @@
   margin: 0;
 }
 
+.page__body {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .page__title {
   font-size: 36px;
   line-height: 36px;
-  margin: 27px 0 40px 20px;
+  margin: 0 0 40px 0;
   font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 120px;
+  }
 }
 
 .page__description {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0 0 40px 20px;
+  margin: 0 0 40px 0;
 }

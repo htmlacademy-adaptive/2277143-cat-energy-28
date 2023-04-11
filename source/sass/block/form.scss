@@ -5,23 +5,30 @@
 }
 
 .form__title {
-  margin: 25px 0 36px;
+  margin: 0;
+  padding: 25px 0 35px;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
   font-weight: 400;
 }
 
-.form__send {
-  border: none;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+    column-gap: 80px;
+    justify-content: space-between;
+  }
 }
 
-.form__information {
-  display: block;
-  text-align: center;
-  font-family: $second-font;
-  font-size: 14px;
-  line-height: 16px;
+.form__list {
+  margin: 0;
+  padding: 0;
+}
+
+.form__item {
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }

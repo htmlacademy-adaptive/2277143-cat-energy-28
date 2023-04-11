@@ -1,5 +1,55 @@
+@use "variables" as *;
+
 .main-header {
+  display: flex;
+  justify-content: space-between;
   font-weight: 500;
-  padding: 10px 20px 17px;
   margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+.main-header__logo {
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 60px;
+  }
+}
+
+.main-nav__toggle {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-width: 440px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    min-width: 478px;
+    justify-content: space-between;
+  }
 }

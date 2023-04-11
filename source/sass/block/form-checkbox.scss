@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .form-checkbox__list {
   margin: 0;
   padding: 0;
@@ -6,6 +8,16 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .form-checkbox__control {

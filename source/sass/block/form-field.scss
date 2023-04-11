@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 .form-field {
   padding-bottom: 24px;
 
@@ -6,16 +8,29 @@
   }
 }
 
+.form__fild-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+  }
+}
+
 .form-field__container {
-  display: block;
+  display: flex;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .form-field__name {
   margin-right: 13px;
+  flex-shrink: 0;
 
   &--contact {
     margin-right: 10px;

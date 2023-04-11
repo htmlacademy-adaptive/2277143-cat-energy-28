@@ -1,5 +1,24 @@
+@use "variables" as *;
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
+  max-width: 1440px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+
+  &--promo__index {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 415px 540px;
+      grid-template-rows: auto auto auto auto;
+    }
+  }
 }

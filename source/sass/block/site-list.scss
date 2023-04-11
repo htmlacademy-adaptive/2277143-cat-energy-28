@@ -1,7 +1,13 @@
+@use "variables" as *;
+
 .site-list {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
+
+  @media (max-width: $mobile-width-only) {
+   display: none;
+  }
 }
 
 .site-list__item {
@@ -16,4 +22,10 @@
 .site-list__link {
   text-decoration: none;
   color: #000000;
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
+  }
 }
