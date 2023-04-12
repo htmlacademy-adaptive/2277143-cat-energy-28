@@ -91,3 +91,10 @@
     transform: rotate(-45deg);
   }
 }
+
+.main-header--closed .main-nav {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
