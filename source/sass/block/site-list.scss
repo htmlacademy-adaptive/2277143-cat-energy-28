@@ -1,27 +1,3 @@
 @use "variables" as *;
 
-.site-list {
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-}
 
-.site-list__item {
-  list-style-type: none;
-  text-align: center;
-  padding-top: 22px;
-  padding-bottom: 24px;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.site-list__link {
-  text-decoration: none;
-  color: #000000;
-
-  &--index {
-    @media (min-width: $desktop-width) {
-      color: #ffffff;
-    }
-  }
-}

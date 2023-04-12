@@ -98,3 +98,27 @@
   }
 }
 
+.main-header--opened .main-nav {
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+}
+
+/* main-header--nojs если JS отключён*/
+.main-header--nojs .main-header__toggle {
+  display: none;
+}
+
+.main-header--nojs .main-nav {
+  position: static;
+  min-height: 0;
+}
+
+.main-header--nojs .main-nav__item {
+  display: block;
+}
