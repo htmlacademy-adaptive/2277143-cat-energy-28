@@ -109,12 +109,12 @@
   }
 }
 
-/* main-header--nojs если JS отключён*/
 .main-header--nojs .main-header__toggle {
   display: none;
 }
 
 .main-header--nojs .main-nav {
+  display: block;
   position: static;
   min-height: 0;
 }
