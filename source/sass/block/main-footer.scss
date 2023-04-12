@@ -2,6 +2,11 @@
 
 .main-footer {
   padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
 }
 
 .main-footer__container {
@@ -22,6 +27,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     text-align: center;
+    width: 142px;
   }
 }
 

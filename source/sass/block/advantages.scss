@@ -10,6 +10,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 45px;
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
@@ -20,7 +27,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 137px;
+    column-gap: 154px;
     row-gap: 37px;
   }
 
@@ -39,12 +46,21 @@
   color: #444444;
   max-width: 97%;
 
+  @media (min-width: $tablet-width) {
+    width: 89%;
+  }
+
   &:last-child {
     padding-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-top: 151px;
+    padding-bottom: 57px;
+    padding-left: 0;
+    padding-right: 26px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +80,10 @@
   left: 0;
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+  }
 }
 
 .advantages__item--use::before {
@@ -77,6 +97,10 @@
   left: 0;
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+  }
 }
 
 .advantages__item--eat::before {
@@ -90,6 +114,10 @@
   left: 0;
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+  }
 }
 
 
@@ -104,6 +132,10 @@
   left: 0;
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+  }
 }
 
 .advantages__description {

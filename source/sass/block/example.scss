@@ -4,6 +4,10 @@
   margin: 0;
   padding: 25px 0 40px 0;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 0 110px 0;
+  }
 }
 
 .example__container {
@@ -13,12 +17,24 @@
   }
 }
 
+.example__wrapper-info {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
+  }
+}
+
 .example__title {
   padding: 0;
   margin: 0 0 40px 0;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 0 63px 0;
+  }
 }
 
 .example__description {
@@ -30,6 +46,12 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
 }
 
 .example__wrapper-cost {
@@ -53,6 +75,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    margin-bottom: 0;
   }
 }
 
@@ -64,6 +87,10 @@
   border-radius: 5%;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+  }
 }
 
 .example__index {
@@ -72,6 +99,11 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__data {
@@ -86,6 +118,11 @@
   line-height: 12px;
   text-align: center;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__cost {
@@ -99,6 +136,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: center;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

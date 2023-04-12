@@ -3,4 +3,8 @@
 .social {
   width: 47%;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+  }
 }

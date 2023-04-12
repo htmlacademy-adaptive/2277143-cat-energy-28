@@ -32,6 +32,15 @@
   font-size: 20px;
   line-height: 20px;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    border-top: none;
+  }
 }
 
 .main-nav__link {
@@ -42,5 +51,12 @@
     @media (min-width: $desktop-width) {
       color: #ffffff;
     }
+  }
+}
+
+.main-nav__link--current {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #68b738;
   }
 }

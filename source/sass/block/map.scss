@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 60px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,12 +31,21 @@
 
   @media (min-width: $tablet-width) {
     max-width: 170px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
 .map__wrapper {
   @media (min-width: $tablet-width) {
     max-width: 170px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
