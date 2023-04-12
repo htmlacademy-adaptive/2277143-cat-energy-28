@@ -2,8 +2,9 @@
 
 .map__address {
   padding: 26px 20px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.71%;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -51,4 +52,9 @@
   @media (min-width: $desktop-width) {
     position: relative;
   }
+}
+
+.map__interactive {
+  border: none;
+  display: block;
 }

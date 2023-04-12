@@ -17,6 +17,7 @@
   display: block;
   padding: 20px 0;
   text-align: center;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -26,10 +27,10 @@
 
 .main-footer__social {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     min-width: 132px;
@@ -52,6 +53,8 @@
   line-height: 19px;
   color: #444444;
   text-align: center;
+  border-top: 1px solid #d9d9d9;
+
 
   @media (min-width: $tablet-width) {
     min-width: 168px;
