@@ -3,6 +3,8 @@
 
 .catalog {
   padding-top: 27px;
+  padding-bottom: 45px;
+  border-bottom: solid 3px #68b738;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
