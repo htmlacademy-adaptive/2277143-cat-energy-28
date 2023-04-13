@@ -3,10 +3,21 @@
 
 .catalog {
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
 }
 
 .catalog__title {
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 163px;
+  }
 }
 
 .catalog__list {
@@ -42,6 +53,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 324px;
+    padding: 0 40px 40px;
   }
 
   @media (min-width: $desktop-width) {
