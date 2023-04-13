@@ -18,6 +18,8 @@
 .product__image-link {
   display: block;
   width: 100%;
+  align-self: center;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -27,7 +29,7 @@
 .product__image {
   &--more {
     display: block;
-    margin: 25px auto;
+    margin: 0 auto 23px;
   }
 }
 
@@ -43,10 +45,12 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+  width: 76px;
 
   &--more {
     margin: 0 0 8px 0;
     text-align: center;
+    width: 100%;
   }
 
   @media (min-width: $tablet-width) {
@@ -68,6 +72,7 @@
 .product__row {
   display: flex;
   justify-content: space-between;
+  height: 14px;
 }
 
 .product__link {
