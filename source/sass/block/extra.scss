@@ -3,6 +3,11 @@
 .extra {
   padding-bottom: 35px;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 76px;
+  }
 }
 
 .extra__title {
@@ -14,6 +19,14 @@
   position: relative;
   background-color: #ffffff;
   width: 226px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    width: 340px;
+    margin-left: 37px;
+    margin-bottom: 80px;
+  }
 }
 
 .extra__title::before {
@@ -26,6 +39,25 @@
   transform: translateY(-50%);
   right: -74px;
   background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: 328px;
+    left: 375px;
+  }
+}
+
+.extra__title::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    z-index: -1;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: -67px;
+    transform: translateY(-50%);
+    background-color: #68b738;
+  }
 }
 
 .extra__wrapper {
@@ -42,11 +74,22 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    margin-bottom: 69px;
+  }
 }
 
 .extra__item {
   padding: 13px 0 20px;
   border-bottom: 1px solid #cdcdcd;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 0 28px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -64,6 +107,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,6 +124,11 @@
   text-transform: uppercase;
   color: #222222;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra__table {
@@ -94,6 +144,13 @@
 .extra__row {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    column-gap: 50px;
+    justify-content: flex-end;
+  }
 }
 
 .extra__gift {
@@ -104,8 +161,9 @@
   background-position: center;
 
   @media (min-width: $tablet-width) {
+    padding: 63px 124px 57px 88px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,6 +175,10 @@
 .extra__gift-image {
   display: block;
   margin: 0 auto 48px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .extra__gift-info {
@@ -129,11 +191,19 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
+    margin: 0;
+    font-weight: 400;
   }
 }
 
 .extra__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 38px;
+    margin-right: 38px;
+    max-width: 89%;
+  }
 
   @media (min-width: $desktop-width) {
     width: 244px;
