@@ -7,10 +7,21 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 0 110px 0;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+    padding: 69px 0 75px 0;
   }
 }
 
 .example__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -20,6 +31,10 @@
 .example__wrapper-info {
   @media (min-width: $tablet-width) {
     margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -34,6 +49,14 @@
     font-size: 60px;
     line-height: 60px;
     padding: 0 0 63px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-bottom: 76px;
+    margin: 0;
   }
 }
 
@@ -51,18 +74,32 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0;
+    width: 576px;
   }
 }
 
 .example__wrapper-cost {
   @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    gap: 47px;
+    padding-left: 110px;
   }
 }
 
@@ -76,6 +113,10 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 366px;
   }
 }
 
@@ -122,6 +163,7 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
   }
 }
 
@@ -152,4 +194,13 @@
 .example__slider {
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    background-color: #eaeaea;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
 }

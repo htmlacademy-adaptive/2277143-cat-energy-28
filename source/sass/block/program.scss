@@ -3,10 +3,6 @@
 .program {
   padding: 0;
   margin: 0 0 20px 0;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
-  }
 }
 
 .program__list {
@@ -25,7 +21,7 @@
   padding: 30px 33px 20px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 33px 57px 52px;
+    padding: 77px 61px 57px 52px;
   }
 
   &--slim {
@@ -58,6 +54,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
@@ -75,6 +72,10 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .program__title--pro::before {
@@ -90,6 +91,10 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -112,6 +117,7 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+    margin-bottom: 27px;
   }
 }
 
@@ -127,6 +133,10 @@
     width: 200px;
     height: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .program__description--pro::before {
@@ -141,18 +151,30 @@
     width: 269px;
     height: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .program__link {
-  display: block;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
   line-height: 16px;
+  width: 139px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    width: 165px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
   }
 }

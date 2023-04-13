@@ -2,6 +2,14 @@
 
 .advantages {
   padding-bottom: 53px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .advantages__title {
@@ -14,7 +22,6 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 45px;
     margin-bottom: 32px;
   }
 }
@@ -33,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -46,10 +54,6 @@
   color: #444444;
   max-width: 97%;
 
-  @media (min-width: $tablet-width) {
-    width: 89%;
-  }
-
   &:last-child {
     padding-bottom: 0;
   }
@@ -61,11 +65,13 @@
     padding-right: 26px;
     font-size: 16px;
     line-height: 24px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 150px;
     max-width: 245px;
+    padding-right: 0;
   }
 }
 
@@ -83,6 +89,8 @@
 
   @media (min-width: $tablet-width) {
     top: 40px;
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -100,6 +108,8 @@
 
   @media (min-width: $tablet-width) {
     top: 40px;
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -117,6 +127,8 @@
 
   @media (min-width: $tablet-width) {
     top: 40px;
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -135,10 +147,19 @@
 
   @media (min-width: $tablet-width) {
     top: 40px;
+    width: 80px;
+    height: 80px;
   }
 }
 
 .advantages__description {
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

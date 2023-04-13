@@ -17,6 +17,7 @@
     background-color: #ffffff;
     margin-left: 110px;
     margin-top: 90px;
+    column-gap: 85px;
   }
 
   &--tablet-form {
@@ -67,4 +68,12 @@
 .map__interactive {
   border: none;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
 }
