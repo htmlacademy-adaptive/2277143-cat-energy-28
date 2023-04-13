@@ -108,7 +108,7 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 26px 0 28px;
+    padding: 26px 38px 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,8 +128,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 38px;
-    padding-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -235,15 +233,14 @@
 }
 
 .extra__button {
-  width: 100%;
+  min-width: 100%;
 
   @media (min-width: $tablet-width) {
-    margin-left: 38px;
-    margin-right: 38px;
-    max-width: 89%;
+    min-width: 632px;
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 0;
     width: 244px;
     margin: 0;
   }
