@@ -17,6 +17,9 @@
 }
 
 .product__image--more {
+  align-self: center;
+  margin-bottom: 23px;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -64,10 +67,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
-  }
-
-  @media (min-width: $tablet-width) {
     text-align: center;
     padding-top: 161px;
     margin: 0 auto 21px;
@@ -82,7 +81,8 @@
     content: "";
     position: absolute;
     top: 82px;
-    right: 92px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60px;
     height: 2px;
     background-color: #d3d3d3;
@@ -93,8 +93,9 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    transform: rotate(90deg);
+    transform: translateX(-50%) rotate(90deg);
     top: 82px;
+    left: 50%;
     right: 92px;
     width: 60px;
     height: 2px;

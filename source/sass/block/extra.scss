@@ -44,6 +44,11 @@
     width: 328px;
     left: 375px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 957px;
+    left: 388px;
+  }
 }
 
 .extra__title::after {
@@ -57,6 +62,11 @@
     left: -67px;
     transform: translateY(-50%);
     background-color: #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    left: -145px;
   }
 }
 
