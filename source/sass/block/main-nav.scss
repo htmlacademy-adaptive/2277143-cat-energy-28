@@ -3,6 +3,7 @@
 .main-nav {
   @media (min-width: $desktop-width) {
     width: 50%;
+    z-index: 1;
   }
 }
 
@@ -51,6 +52,12 @@
     @media (min-width: $desktop-width) {
       color: #ffffff;
     }
+  }
+}
+
+.main-nav__item--white-bord .main-nav__link--current {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
   }
 }
 
