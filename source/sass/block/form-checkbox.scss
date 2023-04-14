@@ -3,6 +3,10 @@
 .form-checkbox {
   position: relative;
   padding: 48px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 69px 70px 54px;
+  }
 }
 
 .form-checkbox__list {

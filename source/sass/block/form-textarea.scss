@@ -4,6 +4,10 @@
   position: relative;
   padding: 46px 20px 40px;
   border-bottom: 2px solid #68b738;
+
+  @media (min-width: $tablet-width) {
+    padding: 88px 70px;
+  }
 }
 
 .form-textarea__field {
@@ -14,4 +18,9 @@
   text-transform: uppercase;
   font-family: inherit;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

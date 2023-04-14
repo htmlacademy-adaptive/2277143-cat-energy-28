@@ -24,7 +24,7 @@
 
   &--tablet-form {
     @media (min-width: $tablet-width) {
-      padding: 0 70px;
+      padding: 0;
     }
 
     @media (min-width: $desktop-width) {

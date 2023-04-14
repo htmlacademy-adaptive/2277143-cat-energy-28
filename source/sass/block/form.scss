@@ -7,6 +7,10 @@
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid #d9d9d9;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+  }
 }
 
 .form__title {
@@ -24,6 +28,13 @@
     top: -20px;
     left: 0;
     background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      width: 554px;
+      font-size: 36px;
+      line-height: 36px;
+      margin-left: 50px;
+    }
   }
 
   &--textarea {
@@ -32,6 +43,13 @@
     top: -20px;
     left: 0;
     background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      width: 226px;
+      font-size: 36px;
+      line-height: 36px;
+      margin-left: 50px;
+    }
   }
 
   &--checkbox {
@@ -40,6 +58,13 @@
     top: -20px;
     left: 0;
     background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      width: 246px;
+      font-size: 36px;
+      line-height: 36px;
+      margin-left: 50px;
+    }
   }
 }
 
