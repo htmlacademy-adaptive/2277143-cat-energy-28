@@ -1,5 +1,11 @@
 @use "variables" as *;
 
+.form-textarea {
+  position: relative;
+  padding: 46px 20px 40px;
+  border-bottom: 2px solid #68b738;
+}
+
 .form-textarea__field {
   width: 100%;
   height: 150px;
@@ -7,4 +13,5 @@
   line-height: 18px;
   text-transform: uppercase;
   font-family: inherit;
+  border: 1px solid #e7e7e7;
 }
