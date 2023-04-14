@@ -23,6 +23,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    row-gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,6 +48,11 @@
   transform: translateY(-50%);
   border: 2px solid rgb(001, 049, 157);
   border-radius: 5px;
+
+
+  @media (min-width: $tablet-width) {
+    height: 49px;
+  }
 }
 
 .form-checkbox__field:hover .form-checkbox__mark {
@@ -74,6 +80,10 @@
   content: "";
   background-repeat: no-repeat;
   background-image: url("../../img/form/green-mark.svg");
+
+  @media (min-width: $tablet-width) {
+    left: 12px;
+  }
 }
 
 .form-checkbox__control {
@@ -83,6 +93,11 @@
 .form-checkbox__name {
   cursor: pointer;
   padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-checkbox__mark {
@@ -93,4 +108,9 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }

@@ -38,13 +38,19 @@
 .form-radio__field:focus-within .form-radio__mark::after {
   content: "";
   position: absolute;
-  width: 308px;
-  height: 47px;
+  width: 238px;
+  height: 38px;
   top: 50%;
   left: -5px;
   transform: translateY(-50%);
   border: 2px solid rgb(001, 049, 157);
   border-radius: 5px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 308px;
+    height: 47px;
+  }
 }
 
 
@@ -66,24 +72,36 @@
 .form-radio__control[type="radio"]:checked + .form-radio__name::before {
   position: absolute;
   top: 50%;
-  left: 35px;
+  left: 9px;
   transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   background-color: #68b738;
   border-radius: 50%;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: 31px;
+  }
 }
 
 .form-radio__mark {
   position: absolute;
-  left: 20px;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: 20px;
+  }
 }
 
 .form-radio__item {
