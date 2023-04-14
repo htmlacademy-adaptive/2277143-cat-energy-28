@@ -27,8 +27,15 @@
   border: 1px solid #bababa;
 }
 
-.form-radio__field:disabled .form-radio__mark {
+
+.form-radio__control:disabled + .form-radio__name {
+  cursor: default;
   opacity: 0.3;
+}
+
+.form-radio__control:disabled + .form-radio__name + .form-radio__mark {
+  border: none;
+  cursor: default;
 }
 
 .form-radio__control[type="radio"]:checked + .form-radio__name::before {
