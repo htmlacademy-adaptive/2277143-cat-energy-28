@@ -2,6 +2,11 @@
 
 .form {
   padding-bottom: 32px;
+  padding-top: 27px;
+
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid #d9d9d9;
+  }
 }
 
 .form__title {

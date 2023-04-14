@@ -1,13 +1,16 @@
 @use "variables" as *;
 
 .form-radio {
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .form-radio__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 }
 
 .form-radio__item {

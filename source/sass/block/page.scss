@@ -21,8 +21,12 @@
 .page__title {
   font-size: 36px;
   line-height: 36px;
-  margin: 0 0 40px 0;
+  margin: 0 0 37px 0;
   font-weight: 400;
+
+  &--form {
+    padding: 0 20px;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 120px;
@@ -33,5 +37,11 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  margin: 0 0 40px 0;
+  margin: 0 0 39px 0;
+  width: 226px;
+
+  &--form {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
