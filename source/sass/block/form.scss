@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .form {
-  padding-bottom: 32px;
+  padding-bottom: 58px;
   padding-top: 27px;
 
   @media (max-width: $mobile-width-only) {
@@ -62,3 +62,4 @@
     width: 100%;
   }
 }
+
