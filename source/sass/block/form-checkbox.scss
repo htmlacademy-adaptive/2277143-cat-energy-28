@@ -33,6 +33,18 @@
 }
 
 
+.form-checkbox__field:focus-within .form-checkbox__mark::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 38px;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  border: 2px solid rgb(001, 049, 157);
+  border-radius: 5px;
+}
+
 .form-checkbox__field:hover .form-checkbox__mark {
   border: 1px solid #bababa;
 }

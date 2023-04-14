@@ -23,6 +23,19 @@
   cursor: pointer;
 }
 
+.form-radio__field:focus-within .form-radio__mark::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 35px;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  border: 2px solid rgb(001, 049, 157);
+  border-radius: 5px;
+}
+
+
 .form-radio__field:hover .form-radio__mark {
   border: 1px solid #bababa;
 }
