@@ -12,7 +12,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 25px;
@@ -37,8 +37,27 @@
   border: 1px solid #bababa;
 }
 
-.form-checkbox__field:disabled .form-checkbox__mark {
+
+.form-checkbox__control:disabled + .form-checkbox__name {
+  cursor: default;
   opacity: 0.3;
+}
+
+.form-checkbox__control:disabled + .form-checkbox__name + .form-checkbox__mark {
+  border: none;
+  cursor: default;
+}
+
+.form-checkbox__control[type="checkbox"]:checked + .form-checkbox__name::before {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 14px;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("../../img/form/green-mark.svg");
 }
 
 .form-checkbox__control {
