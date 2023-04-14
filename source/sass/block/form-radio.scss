@@ -28,6 +28,11 @@
     margin-left: 70px;
     margin-right: 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .form-radio__field {

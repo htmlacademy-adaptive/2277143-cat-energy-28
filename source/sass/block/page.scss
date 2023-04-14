@@ -36,10 +36,15 @@
       margin-left: 70px;
       margin-right: 70px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 120px;
+    padding-top: 130px;
+    margin-bottom: 56px;
   }
 }
 
@@ -61,6 +66,10 @@
       margin-bottom: 66px;
       margin-left: 70px;
       margin-right: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
     }
   }
 }

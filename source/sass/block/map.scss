@@ -25,6 +25,14 @@
       padding: 56px 70px;
     }
   }
+
+  &--pink {
+    background-color: #f2f2f2;
+
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .map__invite {

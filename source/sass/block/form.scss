@@ -72,7 +72,8 @@
 .form__wrapper {
   @media (min-width: $desktop-width) {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 570px 570px;
     column-gap: 80px;
     justify-content: space-between;
   }
