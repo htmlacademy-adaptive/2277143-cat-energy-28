@@ -105,3 +105,17 @@
     background-position: top 50% right 15px;
   }
 }
+
+.form-field__control:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form-field__control:focus-visible {
+  border: 2px solid #444444;
+  outline: none;
+}
+
+.form-field__control:invalid {
+  border: 2px solid #ff8282;
+}
+
