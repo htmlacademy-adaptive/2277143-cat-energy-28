@@ -9,6 +9,10 @@
     padding-top: 0;
     padding-bottom: 95px;
   }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
 }
 
 .form-radio__list {
