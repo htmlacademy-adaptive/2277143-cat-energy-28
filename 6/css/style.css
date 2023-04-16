@@ -848,7 +848,7 @@
 .advantages__item--benefit::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/index/benefit.svg");
+  background-image: url("../img/index/benefit.svg");
   background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center;
@@ -867,7 +867,7 @@
 
 @media (min-width: 769px) {
   .advantages__item--use {
-    background-image: url("../../img/index/2.png");
+    background-image: url("../img/index/2.png");
     background-repeat: no-repeat;
     background-position: 125px 40px;
   }
@@ -876,7 +876,7 @@
 .advantages__item--use::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/index/use.svg");
+  background-image: url("../img/index/use.svg");
   background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center;
@@ -895,7 +895,7 @@
 
 @media (min-width: 769px) {
   .advantages__item--eat {
-    background-image: url("../../img/index/3.png");
+    background-image: url("../img/index/3.png");
     background-repeat: no-repeat;
     background-position: 125px 40px;
   }
