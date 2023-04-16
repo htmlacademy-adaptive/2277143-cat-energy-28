@@ -680,7 +680,7 @@
   .program__description--slim::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/index/program-slimming.svg");
+    background-image: url("../img/index/program-slimming.svg");
     background-repeat: no-repeat;
     top: 50%;
     transform: translateY(-50%);
@@ -699,7 +699,7 @@
   .program__description--pro::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/index/program-fattening.svg");
+    background-image: url("../img/index/program-fattening.svg");
     background-repeat: no-repeat;
     top: 50%;
     transform: translateY(-50%);
@@ -744,7 +744,7 @@
 
 .program__link:hover::after {
   content: "";
-  background-image: url("../../img/index/arrow-medium.svg");
+  background-image: url("../img/index/arrow-medium.svg");
   background-repeat: no-repeat;
   width: 32px;
   height: 12px;
