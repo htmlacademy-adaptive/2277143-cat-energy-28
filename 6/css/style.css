@@ -839,7 +839,7 @@
 
 @media (min-width: 769px) {
   .advantages__item--benefit {
-    background-image: url("../../img/index/1.png");
+    background-image: url("../img/index/1.png");
     background-repeat: no-repeat;
     background-position: 125px 40px;
   }
@@ -904,7 +904,7 @@
 .advantages__item--eat::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/index/eat.svg");
+  background-image: url("../img/index/eat.svg");
   background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center;
@@ -923,7 +923,7 @@
 
 @media (min-width: 769px) {
   .advantages__item--result {
-    background-image: url("../../img/index/4.png");
+    background-image: url("../img/index/4.png");
     background-repeat: no-repeat;
     background-position: 125px 40px;
   }
@@ -932,7 +932,7 @@
 .advantages__item--result::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/index/result.svg");
+  background-image: url("../img/index/result.svg");
   background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center;
