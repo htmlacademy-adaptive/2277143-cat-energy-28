@@ -74,8 +74,9 @@
 }
 
 .form-radio__control:disabled + .form-radio__name + .form-radio__mark {
-  border: none;
+  opacity: 0.3;
   cursor: default;
+  border: 1px solid #cdcdcd;
 }
 
 .form-radio__control[type="radio"]:checked + .form-radio__name::before {
