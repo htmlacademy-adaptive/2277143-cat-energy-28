@@ -48,6 +48,19 @@
   }
 }
 
+.main-nav__item:hover {
+  @media (min-width: $tablet-width) {
+    opacity: 0.6;
+  }
+}
+
+.main-nav__item:active {
+  @media (min-width: $tablet-width) {
+    opacity: 0.3;
+  }
+}
+
+
 .main-nav__link {
   text-decoration: none;
   color: #000000;

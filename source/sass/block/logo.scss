@@ -1,5 +1,13 @@
 @use "variables" as *;
 
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
 .logo-image {
   width: 191px;
   height: 38px;
