@@ -104,10 +104,6 @@
   background-size: 18px 13px;
 }
 
-.form-field__control--email .form-field__control-invalid {
-  background-color: #68b738;
-}
-
 .form-field__control--tel {
   padding-right: 40px;
   background-image: url("../../img/form/phone.svg");
@@ -115,16 +111,20 @@
   background-position: top 50% right 15px;
 }
 
-
 .form-field__control:hover {
-  border: 1px solid #cdcdcd;
+  outline: 1px solid #cdcdcd;
+  outline-offset: -1px;
 }
 
 .form-field__control:focus-visible {
-  border: 2px solid #444444;
-  outline: none;
+  outline: 2px solid #444444;
 }
 
-.form-field__control-invalid {
+.form-field__container-invalid .form-field__control--email {
+  background-image: url("../../img/form/mail-red.svg");
+}
+
+.form-field__container-invalid .form-field__control {
   outline: 2px solid #ff8282;
+  outline-offset: -2px;
 }
