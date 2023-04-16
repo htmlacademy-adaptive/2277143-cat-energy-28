@@ -42,6 +42,14 @@
   }
 }
 
+.main-footer__logo-link:hover .main-footer__logo-image {
+  fill: #3e3e3e;
+}
+
+.main-footer__logo-link:active .main-footer__logo-image {
+  fill: #6b6b6b;
+}
+
 .main-footer__social {
   display: flex;
   justify-content: space-between;
@@ -84,4 +92,12 @@
   display: block;
   padding: 0;
   margin: 0;
+}
+
+.main-footer__developer:hover .main-footer__developer-image {
+  fill: #68b738;
+}
+
+.main-footer__developer:active {
+  opacity: 0.3;
 }

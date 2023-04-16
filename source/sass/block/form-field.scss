@@ -90,21 +90,31 @@
     line-height: 30px;
     padding: 10px 20px 10px;
   }
-
-  &--email {
-    padding-right: 40px;
-    background-image: url("../../img/form/mail.svg");
-    background-repeat: no-repeat;
-    background-position: top 50% right 17px;
-  }
-
-  &--tel {
-    padding-right: 40px;
-    background-image: url("../../img/form/phone.svg");
-    background-repeat: no-repeat;
-    background-position: top 50% right 15px;
-  }
 }
+
+.form-field__control--email {
+  padding-right: 40px;
+  background-image: url("../../img/form/mail.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% right 17px;
+}
+
+.form-field__control--email:focus {
+  background-image: url("../../img/form/mail-green.svg");
+  background-size: 18px 13px;
+}
+
+.form-field__control--email .form-field__control-invalid {
+  background-color: #68b738;
+}
+
+.form-field__control--tel {
+  padding-right: 40px;
+  background-image: url("../../img/form/phone.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% right 15px;
+}
+
 
 .form-field__control:hover {
   border: 1px solid #cdcdcd;
@@ -115,7 +125,6 @@
   outline: none;
 }
 
-.form-field__control:invalid {
-  border: 2px solid #ff8282;
+.form-field__control-invalid {
+  outline: 2px solid #ff8282;
 }
-

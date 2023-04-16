@@ -8,3 +8,11 @@
     width: 132px;
   }
 }
+
+.social__link:hover .social__link-image {
+  fill: #68b738;
+}
+
+.social__link:active .social__link-image {
+  opacity: 0.56;
+}
