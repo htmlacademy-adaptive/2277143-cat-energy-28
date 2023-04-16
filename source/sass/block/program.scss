@@ -185,6 +185,19 @@
   }
 }
 
+.program__link:hover .program__image {
+  display: none;
+}
+
+.program__link:hover::after {
+  content: "";
+  background-image: url("../../img/index/arrow-medium.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 12px;
+  gap: 25px;
+}
+
 .program__link:active {
   opacity: 0.3;
 }
