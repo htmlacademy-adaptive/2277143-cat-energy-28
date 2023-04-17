@@ -7,7 +7,6 @@
   background-size: 100% auto;
   background-position: cover;
   padding-top: 27px;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -28,8 +27,8 @@
 .promo::before {
   @media (min-width: $desktop-width) {
     content: "";
-    position: fixed;
-    top: -123px;
+    position: absolute;
+    top: 0;
     right: 0;
     background-image: url("../img/index/background-cat.png");
     background-repeat: no-repeat;
