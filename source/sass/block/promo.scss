@@ -27,6 +27,14 @@
   }
 }
 
+.promo__box {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 472px 540px;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
 .promo__title {
   font-weight: 400;
   font-size: 36px;

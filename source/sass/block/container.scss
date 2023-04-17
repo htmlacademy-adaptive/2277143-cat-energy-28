@@ -13,24 +13,4 @@
   @media (min-width: $desktop-width) {
     padding: 0 110px;
   }
-
-  &--promo-index {
-    @media (min-width: $desktop-width) {
-      display: grid;
-      grid-template-columns: 472px 540px;
-      grid-template-rows: auto auto auto auto;
-    }
-  }
-
-  &--tablet-form {
-    padding: 0;
-
-    @media (min-width: $tablet-width) {
-      padding: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 110px;
-    }
-  }
 }
