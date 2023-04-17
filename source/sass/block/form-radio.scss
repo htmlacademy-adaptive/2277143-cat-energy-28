@@ -1,13 +1,12 @@
 @use "variables" as *;
 
 .form-radio {
-  padding-top: 20px;
-  padding-bottom: 44px;
-  border-bottom: 2px solid #65b738;
+  margin: 0 -20px 26px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 95px;
+    margin-bottom: 75px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,20 +16,18 @@
 
 .form-radio__list {
   margin: 0;
-  padding-left: 20px;
-  padding-right: 25px;
-  padding-bottom: 25px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
   border-bottom: 1px solid #d9d9d9;
+  padding: 27px 20px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid #d9d9d9;
     padding-top: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   @media (min-width: $desktop-width) {

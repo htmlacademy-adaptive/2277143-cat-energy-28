@@ -1,18 +1,18 @@
 @use "variables" as *;
 
 .form-field {
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
   border-bottom: 1px solid #d9d9d9;
+  margin: 0 -20px;
+  padding: 0 20px 10px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
     border-bottom: none;
     padding-bottom: 72px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,25 +21,20 @@
   }
 
   &--contact {
-    position: relative;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #68b738;
+    border-bottom: none;
 
     @media (min-width: $tablet-width) {
-      padding: 0 70px 70px;
+      padding: 0 40px 45px;
       margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 0 65px;
     }
   }
 }
 
 .form__fild-wrapper {
-  padding-top: 69px;
-
-
-  @media (min-width: $tablet-width) {
-    padding-top: 88px;
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;

@@ -1,15 +1,12 @@
 @use "variables" as *;
 
 .form-checkbox {
-  position: relative;
-  padding: 48px 20px 0;
-
   @media (min-width: $tablet-width) {
-    padding: 69px 70px 54px;
+    padding: 0 40px 54px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 69px 70px 20px;
+    padding: 0 0 66px;
   }
 }
 
@@ -28,6 +25,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     row-gap: 42px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

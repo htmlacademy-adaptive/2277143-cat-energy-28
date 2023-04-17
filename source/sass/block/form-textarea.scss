@@ -1,12 +1,17 @@
 @use "variables" as *;
 
 .form-textarea {
-  position: relative;
-  padding: 46px 20px 40px;
-  border-bottom: 2px solid #68b738;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding: 88px 70px;
+    padding: 0 40px;
+    margin-bottom: 65px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+    padding: 0;
   }
 }
 

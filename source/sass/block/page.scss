@@ -25,16 +25,14 @@
   font-weight: 400;
 
   &--form {
-    padding: 0 20px;
-
     @media (min-width: $tablet-width) {
       padding: 0;
       font-weight: 400;
       font-size: 60px;
       line-height: 60px;
       margin-bottom: 54px;
-      margin-left: 70px;
-      margin-right: 70px;
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
     @media (min-width: $desktop-width) {
@@ -43,7 +41,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 130px;
     margin-bottom: 56px;
   }
 }
@@ -56,16 +53,13 @@
   width: 226px;
 
   &--form {
-    margin-left: 20px;
-    margin-right: 20px;
-
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 30px;
       width: 323px;
       margin-bottom: 66px;
-      margin-left: 70px;
-      margin-right: 70px;
+      margin-left: 40px;
+      margin-right: 40px;
     }
 
     @media (min-width: $desktop-width) {
