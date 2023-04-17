@@ -3,13 +3,10 @@
 
 .catalog {
   padding-top: 27px;
-  padding-bottom: 50px;
   border-top: 1px solid #d9d9d9;
-  border-bottom: solid 3px #68b738;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
-    padding-bottom: 88px;
     border: none;
   }
 

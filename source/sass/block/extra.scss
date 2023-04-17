@@ -2,12 +2,12 @@
 
 .extra {
   padding-bottom: 35px;
-  padding-top: 45px;
+  padding-top: 25px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 76px;
-    padding-top: 95px;
+    padding-top: 68px;
   }
 }
 
@@ -18,29 +18,39 @@
   margin-top: 0;
   font-weight: 400;
   background-color: #ffffff;
-  width: 276px;
-  position: absolute;
-  top: -15px;
-  left: -5px;
-  padding: 0 25px;
+  padding-right: 21px;
+  width: max-content;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 390px;
-    margin-left: 37px;
     margin-bottom: 80px;
-    position: absolute;
-    top: -25px;
-    left: 0;
-    padding: 0 25px;
+    padding: 0 36px 0 37px;
+    position: static;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-    left: 85px;
+    margin-left: -37px;
   }
 }
+
+.extra__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 90px;
+  }
+}
+
 
 .extra__wrapper {
   @media (min-width: $desktop-width) {
