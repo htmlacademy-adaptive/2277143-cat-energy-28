@@ -17,13 +17,26 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 223px;
+    padding-top: 110px;
     padding-bottom: 199px;
-    background-image: url("../img/index/background-cat.png");
-    background-position: top right;
     background-size: 50%;
     color: #000000;
     margin-bottom: 68px;
+  }
+}
+
+.promo::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: fixed;
+    top: -123px;
+    right: 0;
+    background-image: url("../img/index/background-cat.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+    height: 694px;
+    z-index: -1;
   }
 }
 

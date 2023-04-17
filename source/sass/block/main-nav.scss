@@ -16,6 +16,7 @@
     display: flex;
     min-width: 440px;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
