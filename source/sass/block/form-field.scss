@@ -12,7 +12,6 @@
     padding-bottom: 72px;
     margin-left: 40px;
     margin-right: 40px;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,10 +25,11 @@
     @media (min-width: $tablet-width) {
       padding: 0 40px 45px;
       margin: 0;
+      position: relative;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 0 65px;
+     /* padding: 0 0 65px;*/
     }
   }
 }
