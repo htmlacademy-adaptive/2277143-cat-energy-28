@@ -73,6 +73,7 @@
   }
 }
 
+
 .form__title--contact::before {
   content: "";
   position: absolute;
@@ -86,53 +87,7 @@
 
   @media (min-width: $tablet-width) {
     top: 25px;
-    margin-left: -29px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -110px;
-  }
-}
-
-.form__title--textarea::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100vw;
-  height: 2px;
-  background-color: #68b738;
-  z-index: -1;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    top: 25px;
-    margin-left: -40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -110px;
-  }
-}
-
-.form__title--checkbox::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100vw;
-  height: 2px;
-  background-color: #68b738;
-  z-index: -1;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    top: 25px;
-    margin-left: -29px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -110px;
+    left: -37px;
   }
 }
 
