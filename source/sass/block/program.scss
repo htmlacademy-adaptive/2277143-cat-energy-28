@@ -114,7 +114,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    width: 52%;
+    width: 340px;
     font-size: 16px;
     line-height: 24px;
     position: relative;
@@ -153,7 +153,7 @@
     background-repeat: no-repeat;
     top: 50%;
     transform: translateY(-50%);
-    right: -120%;
+    right: -100%;
     width: 269px;
     height: 53px;
   }
