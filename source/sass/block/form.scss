@@ -1,22 +1,132 @@
 @use "variables" as *;
 
 .form {
-  padding-bottom: 32px;
+  padding-bottom: 58px;
+  padding-top: 27px;
+
+  @media (max-width: $mobile-width-only) {
+    border-top: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 72px;
+  }
 }
 
 .form__title {
   margin: 0;
-  padding: 25px 0 35px;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
   font-weight: 400;
+
+  &--contact {
+    background-color: #ffffff;
+    margin-bottom: 35px;
+    position: relative;
+    width: 200px;
+
+    @media (min-width: $tablet-width) {
+      width: 590px;
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 76px;
+      padding: 0 36px 0 37px;
+      margin-left: -37px;
+      position: static;
+    }
+  }
+
+  &--textarea {
+    background-color: #ffffff;
+    margin-bottom: 37px;
+    position: relative;
+    padding-right: 20px;
+    width: max-content;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 76px;
+      padding: 0 36px 0 37px;
+      margin-left: -37px;
+      position: static;
+    }
+  }
+
+  &--checkbox {
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    position: relative;
+    width: max-content;
+    padding-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 65px;
+      position: static;
+      padding: 0 36px 0 37px;
+      margin-left: -37px;
+    }
+  }
+}
+
+
+.form__title--contact::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 25px;
+  }
+}
+
+.form__title--textarea::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 25px;
+  }
+}
+
+.form__title--checkbox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 25px;
+  }
 }
 
 .form__wrapper {
   @media (min-width: $desktop-width) {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 570px 570px;
     column-gap: 80px;
     justify-content: space-between;
   }

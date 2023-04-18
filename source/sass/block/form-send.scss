@@ -10,20 +10,31 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 64px;
+    margin: 0 40px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: start;
+    margin: 0;
   }
 }
 
 .form__send-btn {
   border: none;
   text-transform: uppercase;
-  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 17px 20px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    max-width: 568px;
     padding: 17px 44px;
   }
 }
@@ -34,4 +45,9 @@
   font-size: 14px;
   line-height: 16px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

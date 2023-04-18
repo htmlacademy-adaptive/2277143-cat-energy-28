@@ -1,5 +1,16 @@
 @use "variables" as *;
 
+.form-checkbox {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 54px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 66px;
+  }
+}
+
 .form-checkbox__list {
   margin: 0;
   padding: 0;
@@ -7,19 +18,102 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 25px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 42px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.form-checkbox__field {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+
+.form-checkbox__field:focus-within .form-checkbox__mark::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 38px;
+  top: 50%;
+  left: -5px;
+  transform: translateY(-50%);
+  border: 2px solid rgb(001, 049, 157);
+  border-radius: 5px;
+
+
+  @media (min-width: $tablet-width) {
+    height: 49px;
+  }
+}
+
+.form-checkbox__field:hover .form-checkbox__mark {
+  border: 1px solid #bababa;
+}
+
+
+.form-checkbox__control:disabled + .form-checkbox__name {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.form-checkbox__control:disabled + .form-checkbox__name + .form-checkbox__mark {
+  border: none;
+  cursor: default;
+}
+
+.form-checkbox__control[type="checkbox"]:checked + .form-checkbox__name::before {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 14px;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("../../img/form/green-mark.svg");
+
+  @media (min-width: $tablet-width) {
+    left: 12px;
   }
 }
 
 .form-checkbox__control {
   padding-right: 16px;
+}
+
+.form-checkbox__name {
+  cursor: pointer;
+  padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-checkbox__mark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }

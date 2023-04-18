@@ -1,10 +1,36 @@
 @use "variables" as *;
 
 .form-field {
-  padding-bottom: 24px;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 -20px;
+  padding: 0 20px 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
+    padding-bottom: 72px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   &--contact {
-    padding-bottom: 0;
+    border-bottom: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 40px 45px;
+      margin: 0;
+      position: relative;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 0 65px;
+    }
   }
 }
 
@@ -22,6 +48,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  margin-bottom: 14px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -43,4 +77,49 @@
   line-height: 18px;
   width: 100%;
   font-family: inherit;
+  padding: 13px 20px 12px;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px 10px;
+  }
+}
+
+.form-field__control--email {
+  padding-right: 40px;
+  background-image: url("../../img/form/mail.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% right 17px;
+}
+
+.form-field__control--email:focus {
+  background-image: url("../../img/form/mail-green.svg");
+  background-size: 18px 13px;
+}
+
+.form-field__control--tel {
+  padding-right: 40px;
+  background-image: url("../../img/form/phone.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% right 15px;
+}
+
+.form-field__control:hover {
+  outline: 1px solid #cdcdcd;
+  outline-offset: -1px;
+}
+
+.form-field__control:focus-visible {
+  outline: 2px solid #444444;
+}
+
+.form-field__container-invalid .form-field__control--email {
+  background-image: url("../../img/form/mail-red.svg");
+}
+
+.form-field__container-invalid .form-field__control {
+  outline: 2px solid #ff8282;
+  outline-offset: -2px;
 }

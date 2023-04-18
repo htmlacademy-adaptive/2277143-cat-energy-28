@@ -2,18 +2,29 @@
 
 .main-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   font-weight: 500;
   margin: 0;
-  padding: 0;
+  padding: 10px 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0 30px;
+  }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+    padding: 53px 110px 0 110px;
     background-color: transparent;
   }
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-header__logo {
@@ -24,12 +35,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 60px;
+    height: 59px;
   }
 }
 
-.main-nav__toggle {
+.main-header__toggle {
   border: none;
+  padding: 0;
+  height: 38px;
+  width: 28px;
+  margin-left: auto;
+  position: right;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -40,16 +57,70 @@
   }
 }
 
-.main-nav__list {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    min-width: 440px;
-    justify-content: space-between;
+.main-header--closed .main-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-header--opened .main-header__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 28px;
+    height: 2px;
+    background-color: #000000;
   }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    min-width: 478px;
-    justify-content: space-between;
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
   }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-header--closed .main-nav {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.main-header--opened .main-nav {
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+}
+
+.main-header--nojs .main-header__toggle {
+  display: none;
+}
+
+.main-header--nojs .main-nav {
+  display: block;
+  position: static;
+  min-height: 0;
+}
+
+.main-header--nojs .main-nav__item {
+  display: block;
 }

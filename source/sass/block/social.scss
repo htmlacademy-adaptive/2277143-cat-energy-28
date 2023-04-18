@@ -1,5 +1,18 @@
 @use "variables" as *;
 
 .social {
+  width: 47%;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+  }
+}
+
+.social__link:hover .social__link-image {
+  fill: #68b738;
+}
+
+.social__link:active .social__link-image {
+  opacity: 0.56;
 }

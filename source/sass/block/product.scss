@@ -12,22 +12,37 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    position: relative;
+  }
+}
+
+.product__image--more {
+  align-self: center;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .product__image-link {
   display: block;
   width: 100%;
+  align-self: center;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    position: absolute;
+    top: -45px;
   }
-}
 
-.product__image {
-  &--more {
-    display: block;
-    margin: 25px auto;
+  &--big {
+    @media (min-width: $tablet-width) {
+      text-align: center;
+      position: absolute;
+      top: -73px;
+    }
   }
 }
 
@@ -43,14 +58,48 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #222222;
+  width: 76px;
 
   &--more {
     margin: 0 0 8px 0;
     text-align: center;
+    width: 100%;
   }
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    padding-top: 161px;
+    margin: 0 auto 21px;
+    font-size: 20px;
+    line-height: 24px;
+    width: 154px;
+  }
+}
+
+.product__title--more::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 82px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+}
+
+.product__title--more::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    transform: translateX(-50%) rotate(90deg);
+    top: 82px;
+    left: 50%;
+    right: 92px;
+    width: 60px;
+    height: 2px;
+    background-color: #d3d3d3;
   }
 }
 
@@ -63,11 +112,28 @@
   margin: 0 0 20px 0;
   text-align: left;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 33px;
+  }
 }
 
 .product__row {
   display: flex;
   justify-content: space-between;
+  height: 14px;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #cdcdcd;
+    text-align: center;
+  }
 }
 
 .product__link {
@@ -85,4 +151,17 @@
   line-height: 16px;
   margin: 0 0 20px 0;
   text-align: center;
+  color: #444444;
+
+
+  &--more {
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 18px;
+      margin: 0 auto;
+      margin-bottom: 87px;
+      font-weight: 400;
+      width: 165px;
+    }
+  }
 }

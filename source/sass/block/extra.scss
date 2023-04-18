@@ -2,20 +2,60 @@
 
 .extra {
   padding-bottom: 35px;
+  padding-top: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 76px;
+    padding-top: 68px;
+  }
 }
 
 .extra__title {
   font-size: 24px;
   line-height: 24px;
-  margin-top: 25px;
   margin-bottom: 36px;
+  margin-top: 0;
   font-weight: 400;
+  background-color: #ffffff;
+  padding-right: 21px;
+  width: max-content;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+    padding: 0 36px 0 37px;
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -37px;
+  }
 }
+
+.extra__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  height: 2px;
+  background-color: #68b738;
+  z-index: -1;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 90px;
+  }
+}
+
 
 .extra__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    column-gap: 80px; 
+    column-gap: 80px;
   }
 }
 
@@ -26,17 +66,41 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .extra__item {
   padding: 13px 0 20px;
+  border-bottom: 1px solid #cdcdcd;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     column-gap: 40px;
+    padding: 14px 0 16px;
   }
 }
+
+.extra__item:first-of-type {
+  border-top: 1px solid #cdcdcd;
+}
+
 
 .extra__description {
   @media (min-width: $tablet-width) {
@@ -46,6 +110,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 567px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -57,6 +123,15 @@
   text-transform: uppercase;
   color: #222222;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0;
+  }
 }
 
 .extra__table {
@@ -67,11 +142,26 @@
   color: #444444;
   margin-bottom: 15px;
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0;
+  }
 }
 
 .extra__row {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    column-gap: 50px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .extra__gift {
@@ -82,19 +172,27 @@
   background-position: center;
 
   @media (min-width: $tablet-width) {
+    padding: 63px 124px 57px 88px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 55px 43px 42px 41px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 .extra__gift-image {
   display: block;
   margin: 0 auto 48px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .extra__gift-info {
@@ -107,13 +205,21 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
+    margin: 0;
+    font-weight: 400;
   }
 }
 
 .extra__button {
-  width: 100%;
+  min-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 632px;
+  }
 
   @media (min-width: $desktop-width) {
+    min-width: 0;
     width: 244px;
+    margin: 0;
   }
 }
