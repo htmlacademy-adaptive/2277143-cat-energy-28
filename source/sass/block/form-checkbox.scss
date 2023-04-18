@@ -3,6 +3,7 @@
 .form-checkbox {
   @media (min-width: $tablet-width) {
     padding: 0 40px 54px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
