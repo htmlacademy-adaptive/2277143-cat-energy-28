@@ -29,13 +29,16 @@
 
 .main-header__logo {
   height: 38px;
+  width: 191px;
 
   @media (min-width: $tablet-width) {
     height: 52px;
+    width: 174px;
   }
 
   @media (min-width: $desktop-width) {
     height: 59px;
+    width: 202px;
   }
 }
 
