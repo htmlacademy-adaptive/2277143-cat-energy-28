@@ -2,19 +2,19 @@
 
 .promo {
   text-align: center;
-  background-image: url("../img/index/background-cat.png");
+  /*background-image: url("../img/index/background-cat.png");*/
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: cover;
   padding-top: 27px;
-  /*background-color: #68b738;*/
+  /*background-color: #61A234;*/
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-image: none;
     color: #000000;
     padding-top: 62px;
     padding-bottom: 526px;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,17 +28,32 @@
 }
 
 .promo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 302px;
+  background-image: url("../img/index/background-cat.png");
+  background-color: #64a43c;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  width: 100%;
+  z-index: -1;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    top: 0;
+    background-size: cover;
+    display: inline;
+    transform: none;
     right: 0;
     background-image: url("../img/index/background-cat-desktop.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
     width: 50%;
     height: 694px;
-    z-index: -1;
   }
 }
 
