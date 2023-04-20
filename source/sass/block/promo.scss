@@ -2,12 +2,10 @@
 
 .promo {
   text-align: center;
-  /*background-image: url("../img/index/background-cat.png");*/
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: cover;
   padding-top: 27px;
-  /*background-color: #61A234;*/
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -41,6 +39,10 @@
   width: 100%;
   z-index: -1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/background-cat@2x.png");
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -54,6 +56,11 @@
     background-image: url("../img/index/background-cat-desktop.png");
     width: 50%;
     height: 694px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/background-cat-desktop@2x.png");
+      background-size: 100% auto;
+    }
   }
 }
 
