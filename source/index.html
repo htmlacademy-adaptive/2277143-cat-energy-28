@@ -16,7 +16,13 @@
   <header class="main-header main-header--closed main-header--nojs">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="index.html">
-        <img class="logo-image" src="img/header/logo-mobile.svg" width="191" height="38" alt="Сайт «Кэт энерджи».">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="img/header/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 769px)" srcset="img/header/logo-tablet.svg"
+            width="174" height="52">
+          <img class="logo-image" src="img/header/logo-mobile.svg" width="191" height="38" alt="Сайт «Кэт энерджи».">
+        </picture>
       </a>
       <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Меню.</span>

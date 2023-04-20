@@ -178,11 +178,12 @@
     background-image: url("../img/index/4.png");
     background-repeat: no-repeat;
     background-position: 125px 40px;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/index/4@2x.png");
-    background-size: 121px 227px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/4@2x.png");
+      background-size: 121px 227px;
+    }
   }
 }
 
