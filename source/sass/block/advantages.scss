@@ -82,6 +82,11 @@
     background-image: url("../img/index/1.png");
     background-repeat: no-repeat;
     background-position: 125px 40px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/1@2x.png");
+      background-size: 71px 227px;
+    }
   }
 }
 
@@ -108,7 +113,12 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/index/2.png");
     background-repeat: no-repeat;
-    background-position: 125px 40px;
+    background-position: 125px 30px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/2@2x.png");
+      background-size: 113px 229px;
+    }
   }
 }
 
@@ -135,7 +145,12 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/index/3.png");
     background-repeat: no-repeat;
-    background-position: 125px 40px;
+    background-position: 125px 30px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/3@2x.png");
+      background-size: 113px 232px;
+    }
   }
 }
 
@@ -163,6 +178,12 @@
     background-image: url("../img/index/4.png");
     background-repeat: no-repeat;
     background-position: 125px 40px;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/4@2x.png");
+      background-size: 121px 227px;
+    }
   }
 }
 

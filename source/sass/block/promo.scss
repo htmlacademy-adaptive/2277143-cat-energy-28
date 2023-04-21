@@ -2,23 +2,22 @@
 
 .promo {
   text-align: center;
-  background-image: url("../img/index/background-cat.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: cover;
   padding-top: 27px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-image: none;
     color: #000000;
     padding-top: 62px;
     padding-bottom: 526px;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 110px;
-    padding-bottom: 199px;
+    padding-bottom: 70px;
     background-size: 50%;
     color: #000000;
     margin-bottom: 68px;
@@ -27,17 +26,41 @@
 }
 
 .promo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 302px;
+  background-image: url("../img/index/background-cat.png");
+  background-color: #64a43c;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  width: 100%;
+  z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/background-cat@2x.png");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    top: 0;
+    background-size: cover;
+    display: inline;
+    transform: none;
     right: 0;
-    background-image: url("../img/index/background-cat.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-image: url("../img/index/background-cat-desktop.png");
     width: 50%;
     height: 694px;
-    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/background-cat-desktop@2x.png");
+      background-size: 100% auto;
+    }
   }
 }
 
@@ -45,7 +68,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 472px 540px;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 202px 72px 54px 100px;
   }
 }
 
@@ -70,6 +93,9 @@
   @media (min-width: $desktop-width) {
     margin: 0 0 40px 0;
     width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: self-end;
   }
 }
 
@@ -86,6 +112,11 @@
     padding-left: 12%;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
   }
 }
 
@@ -106,8 +137,11 @@
   @media (min-width: $desktop-width) {
     z-index: 0;
     position: static;
+    transform: none;
     grid-column: 2 / 3;
     grid-row: 1 / 5;
+    margin-top: -82px;
+    margin-left: -18px;
   }
 }
 
