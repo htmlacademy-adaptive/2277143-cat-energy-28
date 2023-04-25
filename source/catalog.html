@@ -18,10 +18,8 @@
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="index.html" aria-label="Сайт Кэт Енерджи">
         <picture>
-          <source media="(min-width: 1440px)"
-            srcset="img/header/logo-desktop.svg" width="202" height="59">
-          <source media="(min-width: 769px)" srcset="img/header/logo-tablet.svg"
-            width="174" height="52">
+          <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 769px)" srcset="img/header/logo-tablet.svg" width="174" height="52">
           <img class="logo-image" src="img/header/logo-mobile.svg" width="191" height="38" alt="Сайт «Кэт энерджи».">
         </picture>
       </a>
@@ -54,6 +52,10 @@
             <div class="product__container">
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 769px)" srcset="img/catalog/chicken500-tablet.webp 1x,
+                  img/catalog/chicken500-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="img/catalog/chicken500-mobile.webp 1x,
+                  img/catalog/chicken500-mobile@2x.webp 2x" width="68" height="86">
                   <source media="(min-width: 769px)"
                     srcset="img/catalog/chicken500-tablet.png 1x, img/catalog/chicken500-tablet@2x.png 2x" width="161"
                     height="172">
@@ -85,6 +87,15 @@
             <div class="product__container">
               <a class="product__image-link product__image-link--big" href="#">
                 <picture>
+
+
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/chicken1000-desktop.webp 1x,
+                  img/catalog/chicken1000-desktop@2x.webp 2x" width="172" height="196">
+                  <source type="image/webp" media="(min-width: 769px)" srcset="img/catalog/chicken1000-tablet.webp 1x,
+                  img/catalog/chicken1000-tablet@2x.webp 2x" width="168" height="206">
+                  <source type="image/webp" srcset="img/catalog/chicken1000-mobile.webp 1x,
+                  img/catalog/chicken1000-mobile@2x.webp 2x" width="84" height="100">
+
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/chicken1000-desktop.png 1x, img/catalog/chicken1000-desktop@2x.png 2x"
                     width="172" height="196">
@@ -388,7 +399,8 @@
           </li>
           <li class="social__item">
             <span class="visually-hidden">Youtube.</span>
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы в youtube">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+              aria-label="Мы в youtube">
               <svg width="25" height="19">
                 <use class="social__link-image" href="img/sprite.svg#icon-youtube"></use>
               </svg>
@@ -396,14 +408,15 @@
           </li>
           <li class="social__item">
             <span class="visually-hidden">Телеграмм.</span>
-            <a class="social__link social__link--telegrgamm" href="https://t.me/htmlacademy" aria-label="Мы в телеграмм">
+            <a class="social__link social__link--telegrgamm" href="https://t.me/htmlacademy"
+              aria-label="Мы в телеграмм">
               <svg width="21" height="18">
                 <use class="social__link-image" href="img/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <a class="main-footer__developer" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Лого академии">
+        <a class="main-footer__developer" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт академии">
           <span class="main-footer__developer-name">HTML Academy</span>
           <svg class="main-footer__developer-logo" width="27" height="34">
             <use class="main-footer__developer-image" href="img/sprite.svg#icon-academy"></use>
