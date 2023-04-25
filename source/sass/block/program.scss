@@ -81,6 +81,10 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    width: 100px;
+    height: 106px;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -101,6 +105,10 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    width: 134px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -114,7 +122,8 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    width: 340px;
+    width: 100%;
+    padding-right: 264px;
     font-size: 16px;
     line-height: 24px;
     position: relative;
@@ -123,6 +132,8 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+    padding-right: 0;
+    padding-bottom: 0;
     margin-bottom: 27px;
   }
 }
@@ -133,11 +144,13 @@
     position: absolute;
     background-image: url("../img/index/program-slimming.svg");
     background-repeat: no-repeat;
-    top: 50%;
+    background-position: center;
+    background-size: cover;
+    top: 40%;
     transform: translateY(-50%);
-    right: -100%;
-    width: 200px;
-    height: 53px;
+    right: 0;
+    width: 201px;
+    height: 212px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,11 +164,13 @@
     position: absolute;
     background-image: url("../img/index/program-fattening.svg");
     background-repeat: no-repeat;
-    top: 50%;
+    background-position: center;
+    background-size: cover;
+    top: 40%;
     transform: translateY(-50%);
-    right: -100%;
+    right: -34px;
     width: 269px;
-    height: 53px;
+    height: 200px;
   }
 
   @media (min-width: $desktop-width) {
