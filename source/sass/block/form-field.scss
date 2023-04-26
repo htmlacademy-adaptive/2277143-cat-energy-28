@@ -113,7 +113,10 @@
 
 .form-field__control:focus-visible {
   outline: 2px solid #444444;
+  outline-offset: 0;
+  transition: outline 0.05s;
 }
+
 
 .form-field__container-invalid .form-field__control--email {
   background-image: url("../../img/form/mail-red.svg");

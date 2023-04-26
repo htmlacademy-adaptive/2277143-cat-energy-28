@@ -188,6 +188,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: opacity 0.2s;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
