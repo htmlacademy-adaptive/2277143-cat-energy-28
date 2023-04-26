@@ -25,6 +25,10 @@
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    z-index: 3;
+  }
 }
 
 .main-header__logo {
@@ -131,7 +135,6 @@
 
     transition: visibility 0.4s, transform 0.4s cubic-bezier(0, 0.86, 0.57, 0.67);
     transform: none;
-    visibility: visible;
   }
 }
 
