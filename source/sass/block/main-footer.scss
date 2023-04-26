@@ -38,6 +38,10 @@
   }
 }
 
+.main-footer__logo-image {
+  transition: fill 0.2s;
+}
+
 .main-footer__logo-link:hover .main-footer__logo-image {
   fill: #3e3e3e;
 }
@@ -75,6 +79,7 @@
   color: #444444;
   text-align: center;
   border-top: 1px solid #d9d9d9;
+  transition: opacity 0.2s;
 
 
   @media (min-width: $tablet-width) {
@@ -88,6 +93,10 @@
   display: block;
   padding: 0;
   margin: 0;
+}
+
+.main-footer__developer-image {
+  transition: fill 0.2s;
 }
 
 .main-footer__developer:hover .main-footer__developer-image {

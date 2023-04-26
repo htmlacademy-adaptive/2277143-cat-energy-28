@@ -33,6 +33,7 @@
   font-size: 20px;
   line-height: 20px;
   border-top: 1px solid #e6e6e6;
+  transition: opacity 0.2s;
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
@@ -50,15 +51,11 @@
 }
 
 .main-nav__item:hover {
-  @media (min-width: $tablet-width) {
-    opacity: 0.6;
-  }
+  opacity: 0.6;
 }
 
 .main-nav__item:active {
-  @media (min-width: $tablet-width) {
-    opacity: 0.3;
-  }
+  opacity: 0.3;
 }
 
 

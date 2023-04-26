@@ -3,10 +3,15 @@
 .social {
   width: 47%;
   list-style-type: none;
+  transition: fill 2s, opacity 0.2s;
 
   @media (min-width: $tablet-width) {
     width: 132px;
   }
+}
+
+.social__link-image {
+  transition: fill 0.2s, opacity 0.2s;
 }
 
 .social__link:hover .social__link-image {
