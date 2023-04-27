@@ -132,6 +132,8 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
@@ -142,6 +144,8 @@
     grid-row: 1 / 5;
     margin-top: -82px;
     margin-left: -18px;
+    width: 522px;
+    height: 499px;
   }
 }
 
