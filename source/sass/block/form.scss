@@ -46,6 +46,8 @@
     position: relative;
     padding-right: 20px;
     width: max-content;
+    margin-left: -20px;
+    padding-left: 20px;
 
     @media (min-width: $tablet-width) {
       font-size: 36px;
@@ -63,6 +65,8 @@
     position: relative;
     width: max-content;
     padding-right: 20px;
+    margin-left: -20px;
+    padding-left: 20px;
 
     @media (min-width: $tablet-width) {
       font-size: 36px;
