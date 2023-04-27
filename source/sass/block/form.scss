@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 .form {
-  padding-bottom: 58px;
+  padding-bottom: 32px;
   padding-top: 27px;
 
   @media (max-width: $mobile-width-only) {
@@ -25,7 +25,9 @@
     background-color: #ffffff;
     margin-bottom: 35px;
     position: relative;
-    width: 200px;
+    width: 240px;
+    margin-left: -20px;
+    padding-left: 20px;
 
     @media (min-width: $tablet-width) {
       width: 590px;
