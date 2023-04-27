@@ -217,3 +217,22 @@
 .program__link:active {
   opacity: 0.3;
 }
+
+.product__image--500 {
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 174px;
+  }
+}
+
+.product__image--1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
