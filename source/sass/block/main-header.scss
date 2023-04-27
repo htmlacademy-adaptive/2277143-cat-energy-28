@@ -6,7 +6,6 @@
   justify-content: space-between;
   font-weight: 500;
   margin: 0;
-  padding: 10px 20px 17px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -27,7 +26,9 @@
   justify-content: space-between;
 
   @media (max-width: 768px) {
-    z-index: 3;
+    padding: 10px 20px 17px;
+    z-index: 2;
+    background-color: #ffffff;
   }
 }
 
@@ -131,8 +132,7 @@
     left: 0;
     width: 100%;
     background-color: #ffffff;
-    z-index: 2;
-
+    z-index: 1;
     transition: visibility 0.4s, transform 0.4s cubic-bezier(0, 0.86, 0.57, 0.67);
     transform: none;
   }
