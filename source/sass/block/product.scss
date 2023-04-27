@@ -136,6 +136,25 @@
   }
 }
 
+.product__image--500 {
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 173px;
+  }
+}
+
+.product__image--1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 203px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
 .product__link {
   margin: 0 auto;
 
