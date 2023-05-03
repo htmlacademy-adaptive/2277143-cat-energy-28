@@ -31,7 +31,13 @@ export const html = () => {
     .pipe(gulp.dest('build'));
 }
 
+//Scripts
 
+//Images
+
+//WebP
+
+//SVG
 
 // Server
 
