@@ -7,6 +7,7 @@ import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-terser';
 
 // Styles
 
@@ -25,13 +26,21 @@ export const styles = () => {
 }
 
 //HTML
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
 //Scripts
+export const script = () => {
+ return gulp.src('source/js/*.js')
+ .pipe(terser())
+  .pipe(gulp.dest('build/js'));
+}
+
+
+
 
 //Images
 
