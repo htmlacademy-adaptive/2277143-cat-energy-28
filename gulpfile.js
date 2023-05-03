@@ -2,19 +2,24 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([
-      autoprefixer()
+  return gulp.src('source/sass/style.scss', { sourcemaps: true }) //style.scss
+
+    .pipe(plumber()) //обработка ошибок
+    .pipe(sass().on('error', sass.logError)) //scss в css
+    .pipe(postcss([ //style.css
+      autoprefixer(), // stule.css(c префиксами)
+      csso() //style.css(c префиксами + min)
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('source/css', { sourcemaps: '.' })) //положи в папку
     .pipe(browser.stream());
 }
 
