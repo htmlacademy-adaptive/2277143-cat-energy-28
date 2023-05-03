@@ -9,6 +9,8 @@ import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgo';
+import svgstore from 'gulp-svgstore';
 
 // Styles
 
@@ -27,7 +29,7 @@ const styles = () => {
 }
 
 //HTML
- export const html = () => {
+ const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
@@ -64,9 +66,20 @@ const createWebp = () => {
 }
 
 //SVG
+export const svg = () =>
+  gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'));
 
-
-
+export const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'))
+}
 
 // Server
 
