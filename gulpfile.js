@@ -15,7 +15,7 @@ import {deleteAsync} from 'del';
 
 // Styles
 
-const styles = () => {
+export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true }) //style.scss
 
     .pipe(plumber()) //обработка ошибок
@@ -37,7 +37,7 @@ const html = () => {
 }
 
 //Scripts
-const script = () => {
+const scripts = () => {
   return gulp.src('source/js/*.js')
    .pipe(terser())
    .pipe(gulp.dest('build/js'));
@@ -84,7 +84,7 @@ const sprite = () => {
 
 //Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp.src ([
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
@@ -119,19 +119,22 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(script));
+  gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+//Build
 
-export default gulp.series(
-  html,
-  styles,
-  script,
-  svg,
-  sprite,
-  copyImages,
-  createWebp,
-  server,
-  watcher
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
+  ),
 );
