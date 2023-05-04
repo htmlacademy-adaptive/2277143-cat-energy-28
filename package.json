@@ -49,6 +49,8 @@
   },
   "type": "module",
   "dependencies": {
+    "7": "^0.0.1",
+    "del": "^7.0.0",
     "terser": "^5.17.1"
   }
 }
