@@ -138,3 +138,19 @@ export const build = gulp.series(
     createWebp
   ),
 );
+
+export default gulp.series(
+  clean,
+  gulp.parallel(
+      html,
+      styles,
+      scripts,
+      sprite,
+      svg,
+      copy,
+      copyImages,
+      createWebp
+  ),
+  server,
+  watcher
+);
