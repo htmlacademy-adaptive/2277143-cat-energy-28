@@ -157,7 +157,7 @@ export default gulp.series(
     watcher
 ));
 
-function reload (done) {
+function reload (done) { //reload
   browser.reload();
   done();
 }
