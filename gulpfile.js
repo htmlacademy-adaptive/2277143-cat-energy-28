@@ -97,6 +97,7 @@ const copy = (done) => {
 }
 
 //Clean
+
 const clean = () => {
   return deleteAsync ('build');
 }
@@ -135,7 +136,7 @@ export const build = gulp.series(
     scripts,
     svg,
     sprite,
-    createWebp,
+    createWebp
   ),
 );
 
@@ -149,9 +150,14 @@ export default gulp.series(
       scripts,
       sprite,
       svg,
-      createWebp,
+      createWebp
   ),
   gulp.series(
     server,
     watcher
 ));
+
+function reload (done) {
+  browser.reload();
+  done();
+}
