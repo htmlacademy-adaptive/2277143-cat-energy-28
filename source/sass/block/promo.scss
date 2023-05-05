@@ -32,7 +32,7 @@
   left: 50%;
   transform: translateX(-50%);
   height: 302px;
-  background-image: url("../img/index/background-cat.png");
+  background-image: url("../img/index/background-cat.webp");
   background-color: #64a43c;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -40,7 +40,7 @@
   z-index: -1;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/index/background-cat@2x.png");
+    background-image: url("../img/index/background-cat@2x.webp");
     background-size: 320px auto;
   }
 
