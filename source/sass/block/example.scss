@@ -226,6 +226,13 @@
   }
 }
 
+.example__image {
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
 .example__image--pro {
   clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
 }
