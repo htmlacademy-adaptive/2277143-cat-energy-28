@@ -10,6 +10,9 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/js/script.js" as="script">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -19,7 +22,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
           <source media="(min-width: 769px)" srcset="img/header/logo-tablet.svg">
-          <img class="logo-image" src="img/header/logo-mobile.svg" width="191" height="38" alt="Сайт «Кэт энерджи».">
+          <img class="logo-image" loading="lazy" src="img/header/logo-mobile.svg" width="191" height="38" alt="Сайт «Кэт энерджи».">
         </picture>
       </a>
       <button class="main-header__toggle" type="button">
@@ -57,7 +60,7 @@
                   img/catalog/chicken500-mobile@2x.webp 2x">
                   <source media="(min-width: 769px)"
                     srcset="img/catalog/chicken500-tablet.png 1x, img/catalog/chicken500-tablet@2x.png 2x">
-                  <img class="product__image product__image--500" src="img/catalog/chicken500-mobile.png" width="68"
+                  <img class="product__image product__image--500" loading="lazy" src="img/catalog/chicken500-mobile.png" width="68"
                     height="86" srcset="img/catalog/chicken500-mobile@2x.png 2x" alt="Корм с курицей 500 грамм.">
                 </picture>
               </a>
@@ -95,7 +98,7 @@
                     srcset="img/catalog/chicken1000-desktop.png 1x, img/catalog/chicken1000-desktop@2x.png 2x">
                   <source media="(min-width: 769px)"
                     srcset="img/catalog/chicken1000-tablet.png 1x, img/catalog/chicken1000-tablet@2x.png 2x">
-                  <img class="product__image  product__image--1000" src="img/catalog/chicken1000-mobile.png" width="84"
+                  <img class="product__image  product__image--1000" loading="lazy" src="img/catalog/chicken1000-mobile.png" width="84"
                     height="100" srcset="img/catalog/chicken1000-mobile@2x.png 2x" alt="Корм с курицей 1000 грамм.">
                 </picture>
               </a>
@@ -123,9 +126,13 @@
             <div class="product__container">
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 769px)" srcset="img/catalog/fish500-tablet.webp 1x,
+                  img/catalog/fish500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/fish500-mobile.webp 1x,
+                  img/catalog/fish500-mobile@2x.webp 2x">
                   <source media="(min-width: 769px)"
                     srcset="img/catalog/fish500-tablet.png 1x, img/catalog/fish500-tablet@2x.png 2x">
-                  <img class="product__image product__image--500" src="img/catalog/fish500-mobile.png" width="68"
+                  <img class="product__image product__image--500" loading="lazy" src="img/catalog/fish500-mobile.png" width="68"
                     height="78" srcset="img/catalog/fish500-mobile@2x.png 2x" alt="Корм рыба 500 грамм.">
                 </picture>
               </a>
@@ -153,11 +160,17 @@
             <div class="product__container">
               <a class="product__image-link product__image-link--big" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/fish1000-desktop.webp 1x,
+                  img/catalog/fish1000-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 769px)" srcset="img/catalog/fish1000-tablet.webp 1x,
+                  img/catalog/fish1000-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/fish1000-mobile.webp 1x,
+                  img/catalog/fish1000-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/fish1000-desktop.png 1x, img/catalog/fish1000-desktop@2x.png 2x">
                   <source media="(min-width: 769px)"
                     srcset="img/catalog/fish1000-tablet.png 1x, img/catalog/fish1000-tablet@2x.png 2x">
-                  <img class="product__image product__image--1000" src="img/catalog/fish1000-mobile.png" width="84"
+                  <img class="product__image product__image--1000" loading="lazy" src="img/catalog/fish1000-mobile.png" width="84"
                     height="100" srcset="img/catalog/fish1000-mobile@2x.png 2x" alt="Корм рыба 1000 грамм.">
                 </picture>
               </a>
@@ -185,9 +198,13 @@
             <div class="product__container">
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 769px)" srcset="img/catalog/cereal500-tablet.webp 1x,
+                  img/catalog/cereal500-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/cereal500-mobile.webp 1x,
+                  img/catalog/cereal500-mobile@2x.webp 2x">
                   <source media="(min-width: 769px)"
                     srcset="img/catalog/cereal500-tablet.png 1x, img/catalog/cereal500-tablet@2x.png 2x">
-                  <img class="product__image product__image--500" src="img/catalog/cereal500-mobile.png" width="68"
+                  <img class="product__image product__image--500" loading="lazy" src="img/catalog/cereal500-mobile.png" width="68"
                     height="78" srcset="img/catalog/cereal500-mobile@2x.png 2x" alt="Корм греча 500 грамм.">
                 </picture>
               </a>
@@ -215,11 +232,17 @@
             <div class="product__container">
               <a class="product__image-link product__image-link--big" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/cereal1000-desktop.webp 1x,
+                  img/catalog/cereal1000-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 769px)" srcset="img/catalog/cereal1000-tablet.webp 1x,
+                  img/catalog/cereal1000-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/cereal1000-mobile.webp 1x,
+                  img/catalog/cereal1000-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)"
                     srcset="img/catalog/cereal1000-desktop.png 1x, img/catalog/cereal1000-desktop@2x.png 2x">
                   <source media="(min-width: 769px)"
                     srcset="img/catalog/cereal1000-tablet.png 1x, img/catalog/cereal1000-tablet@2x.png 2x">
-                  <img class="product__image product__image--1000" src="img/catalog/cereal1000-mobile.png" width="84"
+                  <img class="product__image product__image--1000" loading="lazy" src="img/catalog/cereal1000-mobile.png" width="84"
                     height="100" srcset="img/catalog/cereal1000-mobile@2x.png 2x" alt="Корм греча 1000 грамм.">
                 </picture>
               </a>
@@ -247,9 +270,13 @@
             <div class="product__container">
               <a class="product__image-link" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 769px)" srcset="img/catalog/rice-tablet.webp 1x,
+                  img/catalog/rice-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog/rice-mobile.webp 1x,
+                  img/catalog/rice-mobile@2x.webp 2x">
                   <source media="(min-width: 769px)"
                     srcset="img/catalog/rice-tablet.png 1x, img/catalog/rice-tablet@2x.png 2x">
-                  <img class="product__image product__image--500" src="img/catalog/rice-mobile.png" width="72"
+                  <img class="product__image product__image--500" loading="lazy" src="img/catalog/rice-mobile.png" width="72"
                     height="84" srcset="img/catalog/rice-mobile@2x.png 2x" alt="Корм рис 500 грамм.">
                 </picture>
               </a>
@@ -275,7 +302,7 @@
           </li>
           <li class="catalog__item catalog__item--more product">
             <div class="product__container product__container--more">
-              <img class="product__image product__image--more" src="img/catalog/plus.svg" width="30" height="30"
+              <img class="product__image product__image--more" loading="lazy" src="img/catalog/plus.svg" width="30" height="30"
                 alt="Показать еще.">
               <h3 class="product__title product__title--more">Показать еще 100500 товаров</h3>
               <span class="product__add product__add--more">На самом деле вкусов гораздо больше!</span>
@@ -359,7 +386,7 @@
       </div>
       <div class="map__view">
         <div class="map__yandex" style="position: relative;">
-          <iframe class="map__interactive"
+          <iframe class="map__interactive" loading="lazy"
             src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
             width="100%" height="362" frameborder="1" allowfullscreen="true" style="position: relative;">
           </iframe>

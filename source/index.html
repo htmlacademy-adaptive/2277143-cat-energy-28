@@ -10,6 +10,11 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/css/style.min.css" as="style">
+  <link rel="preload" href="/js/script.js" as="script">
+  <link rel="preload" href="/img/index/background-cat.webp" as="image">
+  <link rel="preload" href="/img/index/background-cat@2x.webp" as="image">
+  <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -19,7 +24,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg">
           <source media="(min-width: 769px)" srcset="img/header/logo-tablet.svg">
-          <img class="logo-image" src="img/header/logo-mobile.svg" width="191" height="38" alt="Сайт «Кэт энерджи».">
+          <img class="logo-image" loading="lazy" src="img/header/logo-mobile.svg" width="191" height="38" alt="Сайт «Кэт энерджи».">
         </picture>
       </a>
       <button class="main-header__toggle" type="button">
@@ -48,10 +53,15 @@
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/index/promo-desktop.webp 1x, img/index/promo-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 769px)"
+              srcset="img/index/promo-tablet.webp 1x, img/index/promo-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/index/promo-mobile.webp 1x, img/index/promo-mobile@2x.webp 2x">
             <source media="(min-width: 1440px)"
               srcset="img/index/promo-desktop.png 1x, img/index/promo-desktop@2x.png 2x">
             <source media="(min-width: 769px)" srcset="img/index/promo-tablet.png 1x, img/index/promo-tablet@2x.png 2x">
-            <img class="promo__product-image" src="img/index/promo-mobile.png" width="280" height="270"
+            <img class="promo__product-image" loading="lazy" src="img/index/promo-mobile.png" width="280" height="270"
               srcset="img/index/promo-mobile@2x.png 2x" alt="Корм с курицей 500 грамм.">
           </picture>
           <a class="button promo__link" href="form.html">Подобрать программу</a>
@@ -141,15 +151,23 @@
           </div>
           <div class="example__slider">
             <picture>
+              <source type="image/webp" media="(min-width: 769px)"
+                srcset="img/index/thick-cat-tablet.webp 1x, img/index/thick-cat-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/index/thick-cat-mobile.webp 1x, img/index/thick-cat-mobile@2x.webp 2x">
               <source media="(min-width: 769px)"
                 srcset="img/index/thick-cat-tablet.png 1x, img/index/thick-cat-tablet@2x.png 2x">
-              <img class="example__image example__image--pro" src="img/index/thick-cat-mobile.png" width="280"
+              <img class="example__image example__image--pro" loading="lazy" src="img/index/thick-cat-mobile.png" width="280"
                 height="256" srcset="img/index/thick-cat-mobile@2x.png 2x" alt="Кот до похудение">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width: 769px)"
+                srcset="img/index/thin-cat-tablet.webp 1x, img/index/thin-cat-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/index/thin-cat-mobile.webp 1x, img/index/thin-cat-mobile@2x.webp 2x">
               <source media="(min-width: 769px)"
                 srcset="img/index/thin-cat-tablet.png 1x, img/index/thin-cat-tablet@2x.png 2x">
-              <img class="example__image example__image--slim" src="img/index/thin-cat-mobile.png" width="280"
+              <img class="example__image example__image--slim" loading="lazy" src="img/index/thin-cat-mobile.png" width="280"
                 height="256" srcset="img/index/thin-cat-mobile@2x.png 2x" alt="Кот после похудение">
             </picture>
           </div>
@@ -167,8 +185,7 @@
       </div>
       <div class="map__view">
         <div class="map__yandex" style="position: relative;">
-          <iframe class="map__interactive"
-            src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
+          <iframe class="map__interactive" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
             width="100%" height="362" frameborder="1" allowfullscreen="true" style="position: relative;">
           </iframe>
         </div>
