@@ -62,6 +62,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 162px;
     margin-bottom: 73px;
+    max-width: 100%;
   }
 }
 
@@ -186,6 +187,7 @@
   font-size: 16px;
   line-height: 16px;
   min-width: 139px;
+
   display: flex;
   justify-content: flex-start;
   column-gap: 15px;
@@ -195,23 +197,28 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 165px;
+    width: 60%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 168px;
+    width: 100%;
   }
 }
 
-.program__link:hover .program__image {
-  display: none;
+.program__link::after {
+  content: "";
+  background-image: url("../img/index/arrow-small.svg");
+  background-repeat: no-repeat;
+  width: 125px;
+  height: 12px;
+  gap: 25px;
 }
 
 .program__link:hover::after {
   content: "";
   background-image: url("../img/index/arrow-medium.svg");
   background-repeat: no-repeat;
-  width: 32px;
+  width: 125px;
   height: 12px;
   gap: 25px;
 }
