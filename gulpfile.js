@@ -16,16 +16,16 @@ import {deleteAsync} from 'del';
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true }) //style.scss
+  return gulp.src('source/sass/style.scss', { sourcemaps: true })
 
-    .pipe(plumber()) //обработка ошибок
-    .pipe(sass().on('error', sass.logError)) //scss в css
-    .pipe(postcss([ //style.css
-      autoprefixer(), // stule.css(c префиксами)
-      csso() //style.css(c префиксами + min)
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' })) //положи в папку
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
