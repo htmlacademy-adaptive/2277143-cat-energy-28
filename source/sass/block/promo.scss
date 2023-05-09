@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: cover;
-  padding-top: 27px;
+  padding-top: 26px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -31,7 +31,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 302px;
+  height: 301px;
   background-image: url("../img/index/background-cat.png");
   background-color: #64a43c;
   background-repeat: no-repeat;
@@ -77,6 +77,7 @@
   font-size: 36px;
   line-height: 36px;
   padding: 0;
+  padding-left: 1px;
   margin: 0 0 25px 0;
   color: $color-white;
 
@@ -101,8 +102,10 @@
 
 .promo__slogan {
   line-height: 14px;
+  font-size: 14px;
   margin: 0 0 30px 0;
   padding: 0;
+  padding-right: 1px;
   text-transform: uppercase;
   color: $color-white;
 
