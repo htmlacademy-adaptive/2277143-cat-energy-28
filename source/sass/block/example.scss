@@ -243,3 +243,61 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+
+
+
+
+.example__control {
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  border-color: #666666;
+  background-color: #666666;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+}
+
+.example__control-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  color: inherit;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.example__control-button::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 8px;
+  border-style: solid;
+  border-width: 9px 0 9px 8px;
+  border-color: transparent transparent transparent #666666;
+}
+
+.example__control-button::before {
+  content: "";
+  transform: rotate(180deg);
+  right: auto;
+  left: 8px;
+  position: absolute;
+  top: 25%;
+  border-style: solid;
+  border-width: 9px 0 9px 8px;
+  border-color: transparent transparent transparent #666666;
+}
