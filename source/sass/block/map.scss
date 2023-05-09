@@ -58,6 +58,11 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+    max-height: 200px;
+  }
 }
 
 .map__description {
