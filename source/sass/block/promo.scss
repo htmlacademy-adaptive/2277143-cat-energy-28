@@ -68,7 +68,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 472px 540px;
-    grid-template-rows: 202px 72px 54px 100px;
+    grid-template-rows: 202px 72px auto 100px;
   }
 }
 
