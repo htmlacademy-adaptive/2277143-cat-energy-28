@@ -40,6 +40,7 @@
 .form-radio__field {
   position: relative;
   cursor: pointer;
+  display: flex;
 }
 
 .form-radio__field:focus-within .form-radio__mark::after {
@@ -121,6 +122,7 @@
 
 .form-radio__name {
   padding-left: 45px;
+  max-width: 85%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
