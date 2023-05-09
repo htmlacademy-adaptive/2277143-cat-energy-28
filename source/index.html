@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="/css/style.min.css" as="style">
   <link rel="preload" href="/js/script.js" as="script">
-  <link rel="preload" href="/img/index/background-cat.webp" as="image" media="max-width: 768px">
-  <link rel="preload" href="/img/index/background-cat@2x.webp" as="image" media="max-width: 768px">
-  <link rel="preload" href="/img/index/background-cat-desktop.webp" as="image" media="min-width: 1440px">
-  <link rel="preload" href="/img/index/background-cat-desktop@2x.webp" as="image" media="min-width: 1440px">
+  <link rel="preload" href="/img/index/background-cat.webp" as="image" media="(max-width: 768px)">
+  <link rel="preload" href="/img/index/background-cat@2x.webp" as="image" media="(max-width: 768px)">
+  <link rel="preload" href="/img/index/background-cat-desktop.webp" as="image" media="(min-width: 1440px)">
+  <link rel="preload" href="/img/index/background-cat-desktop@2x.webp" as="image" media="(min-width: 1440px)">
   <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
 </head>
 
@@ -155,7 +155,7 @@
                 height="256" srcset="img/index/thick-cat-mobile@2x.png 2x" alt="Кот до похудение">
             </picture>
             <div class="example__control">
-              <button class="example__control-button" type="button" area-label="slider">
+              <button class="example__control-button" type="button">
                 <span class="visually-hidden">Переключатель слайдера.</span>
               </button>
             </div>
@@ -184,8 +184,9 @@
       </div>
       <div class="map__view">
         <div class="map__yandex" style="position: relative;">
-          <iframe class="map__interactive" loading="lazy" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
-            width="100%" height="362" frameborder="1" allowfullscreen="true" style="position: relative;">
+          <iframe class="map__interactive" loading="lazy"
+            src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.59"
+            width="100%" height="362" style="position: relative;">
           </iframe>
          </div>
       </div>
