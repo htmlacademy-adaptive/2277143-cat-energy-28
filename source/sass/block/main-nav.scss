@@ -43,6 +43,7 @@
     padding-top: 18px;
     padding-bottom: 12px;
     border-top: none;
+    max-width: 154px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,3 +84,4 @@
     border-bottom: 2px solid #68b738;
   }
 }
+
