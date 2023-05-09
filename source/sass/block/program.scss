@@ -24,7 +24,7 @@
 
 .program__item {
   background-color: #f2f2f2;
-  padding: 30px 33px 20px 20px;
+  padding: 30px 20px 22px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 61px 57px 52px;
@@ -49,7 +49,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0 0 30px 0;
-  padding-left: 70px;
+  padding-left: 71px;
   position: relative;
   max-width: 75%;
 
@@ -66,6 +66,12 @@
   }
 }
 
+.program__title--pro {
+  @media (max-width: $desktop-width) {
+    max-width: 100%;
+  }
+}
+
 .program__title--slim::before {
   content: "";
   position: absolute;
@@ -73,7 +79,7 @@
   background-repeat: no-repeat;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: 2px;
   width: 50px;
   height: 53px;
 
@@ -115,8 +121,8 @@
 }
 
 .program__description {
-  margin: 0 0 20px 0;
-  padding-bottom: 23px;
+  margin: 0 0 19px 0;
+  padding-bottom: 21px;
   font-family: $second-font;
   font-size: 14px;
   line-height: 18px;
@@ -187,7 +193,6 @@
   font-size: 16px;
   line-height: 16px;
   min-width: 139px;
-
   display: flex;
   justify-content: flex-start;
   column-gap: 15px;
