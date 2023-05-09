@@ -255,7 +255,7 @@
   border-color: #666666;
   background-color: #666666;
   z-index: 1;
-  cursor: pointer;
+  cursor: col-resize;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -263,6 +263,26 @@
   @media (min-width: $tablet-width) {
     height: 512px;
   }
+}
+
+.example__control:hover {
+  background-color: #68b738;
+}
+
+.example__control:hover .example__control-button::after {
+  border-color: transparent transparent transparent #68b738;
+}
+
+.example__control:hover .example__control-button::before {
+  border-color: transparent transparent transparent #68b738;
+}
+
+.example__control:hover .example__control-button {
+  border: 2px solid #68b738;
+}
+
+.example__control:active {
+  opacity: 0.6;
 }
 
 .example__control-button {
@@ -277,7 +297,7 @@
   border: 2px solid #666666;
   border-radius: 50%;
   background-color: #ffffff;
-  cursor: pointer;
+  cursor: col-resize;
 }
 
 .example__control-button::after {
