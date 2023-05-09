@@ -15,6 +15,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     min-width: 440px;
+    max-width: 532px;
     justify-content: space-between;
     flex-wrap: wrap;
   }
