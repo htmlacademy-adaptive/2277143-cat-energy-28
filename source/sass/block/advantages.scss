@@ -10,7 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
+    padding-top: 55px;
+    border-bottom: none;
   }
 }
 
@@ -26,6 +27,10 @@
     line-height: 60px;
     margin-bottom: 32px;
     padding-left: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -91,7 +96,13 @@
       background-size: 71px 227px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: bottom 14px right 47px;
+  }
 }
+
+
 
 .advantages__item--benefit::before {
   content: "";
@@ -122,6 +133,10 @@
       background-image: url("../img/index/2@2x.png");
       background-size: 113px 229px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: bottom 14px right 10px;
   }
 }
 
@@ -154,6 +169,10 @@
       background-image: url("../img/index/3@2x.png");
       background-size: 113px 232px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: bottom 11px right 10px;
   }
 }
 
@@ -188,6 +207,11 @@
       background-size: 121px 227px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: bottom 11px right 2px;
+  }
+
 }
 
 .advantages__item--result::before {
