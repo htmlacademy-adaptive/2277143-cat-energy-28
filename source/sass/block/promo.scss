@@ -67,8 +67,8 @@
 .promo__box {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 472px 540px;
-    grid-template-rows: 202px 72px auto 100px;
+    grid-template-columns: 495px 580px;
+    grid-template-rows: 160px 72px auto 100px;
   }
 }
 
@@ -94,6 +94,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 40px 0;
+    padding-left: 78px;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -122,6 +123,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-left: 78px;
   }
 }
 
@@ -148,8 +150,8 @@
     grid-column: 2 / 3;
     grid-row: 1 / 5;
     margin-top: -82px;
-    margin-left: -18px;
-    width: 522px;
+    margin-left: -45px;
+    width: 552px;
     height: 499px;
   }
 }
@@ -171,5 +173,6 @@
     padding: 17px 5px;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    margin-left: 80px;
   }
 }
