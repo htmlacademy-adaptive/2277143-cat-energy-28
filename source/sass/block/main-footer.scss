@@ -27,12 +27,14 @@
 .main-footer__logo-link {
   display: block;
   padding: 25px 0 15px;
-  padding-right: 1px;
+  padding-right: 3px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 
+
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-top: 2px;
     text-align: center;
     width: 143px;
     height: 28px;
@@ -42,7 +44,7 @@
 
 .social__link-svg {
   transition: opacity 0.3s;
-  
+
   @media (min-width: $tablet-width) {
     width: 143px;
     height: 28px;
@@ -104,7 +106,7 @@
   margin: 0;
   max-width: 90%;
 }
-
+/*
 .main-footer__developer-image {
   transition: fill 0.2s;
 }
@@ -115,4 +117,16 @@
 
 .main-footer__developer:active {
   opacity: 0.3;
+}*/
+
+.main-footer__developer::after {
+  transition: background-color 0.2s, opacity 0.2s;
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  top: 2px;
+  left: 8px;
+  background-color: #666666;
+  mask: url("../../img/stake.svg#telegramm") no-repeat 50% 50%;
 }

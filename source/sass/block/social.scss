@@ -10,14 +10,67 @@
   }
 }
 
-.social__link-image {
-  transition: fill 0.2s, opacity 0.2s;
+.social__item {
+  position: relative;
+  width: 40px;
+  height: 20px;
 }
 
-.social__link:hover .social__link-image {
-  fill: #68b738;
+.social__link--vkontakte::after {
+  transition: background-color 0.2s, opacity 0.2s;
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 22px;
+  top: 0;
+  background-color: #666666;
+  mask: url("../../img/stake.svg#vk") no-repeat 50% 50%;
 }
 
-.social__link:active .social__link-image {
+.social__link--vkontakte:hover::after {
+  background-color: #68b738;
+}
+
+.social__link--vkontakte:active::after {
+  opacity: 0.56;
+}
+
+.social__link--youtube::after {
+  transition: background-color 0.2s, opacity 0.2s;
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 19px;
+  top: 2px;
+  left: 3px;
+  background-color: #666666;
+  mask: url("../../img/stake.svg#youtube") no-repeat 50% 50%;
+}
+
+.social__link--youtube:hover::after {
+  background-color: #68b738;
+}
+
+.social__link--youtube:active::after {
+  opacity: 0.56;
+}
+
+.social__link--telegramm::after {
+  transition: background-color 0.2s, opacity 0.2s;
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 19px;
+  top: 2px;
+  left: 8px;
+  background-color: #666666;
+  mask: url("../../img/stake.svg#telegramm") no-repeat 50% 50%;
+}
+
+.social__link--telegramm:hover::after {
+  background-color: #68b738;
+}
+
+.social__link--telegramm:active::after {
   opacity: 0.56;
 }
