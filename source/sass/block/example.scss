@@ -47,7 +47,7 @@
 
 .example__wrapper-info {
   @media (min-width: $tablet-width) {
-    margin-bottom: 104px;
+    margin-bottom: 258px;
   }
 
   @media (min-width: $desktop-width) {
@@ -228,10 +228,17 @@
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
     padding: 0;
+    padding-bottom: 94px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
+  }
+}
+
+.example__slider picture {
+  @media (min-width: $tablet-width) {
+    margin-top: -150px;
   }
 }
 
@@ -267,6 +274,7 @@
 
   @media (min-width: $tablet-width) {
     height: 512px;
+    top: -151px;
   }
 }
 
