@@ -2,7 +2,7 @@
 
 .example {
   margin: 0;
-  padding: 25px 0 40px;
+  padding: 25px 0 35px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -143,8 +143,8 @@
   text-align: center;
   border: 1px solid #cfcfcf;
   border-radius: 5%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
@@ -167,7 +167,7 @@
 .example__data {
   padding: 0 15px;
   position: absolute;
-  bottom: -14px;
+  bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #eaeaea;
@@ -177,7 +177,7 @@
   text-align: center;
   color: #444444;
   overflow: hidden;
-  max-height: 14px;
+  max-height: 24px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -303,7 +303,7 @@
   content: "";
   position: absolute;
   top: 25%;
-  right: 8px;
+  right: 6px;
   border-style: solid;
   border-width: 9px 0 9px 8px;
   border-color: transparent transparent transparent #666666;
@@ -313,7 +313,7 @@
   content: "";
   transform: rotate(180deg);
   right: auto;
-  left: 8px;
+  left: 6px;
   position: absolute;
   top: 25%;
   border-style: solid;

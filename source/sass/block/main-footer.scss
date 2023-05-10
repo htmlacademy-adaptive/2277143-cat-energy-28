@@ -2,7 +2,7 @@
 
 .main-footer {
   background-color: #f2f2f2;
-  padding: 20px 0;
+  padding: 14px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
@@ -26,7 +26,8 @@
 
 .main-footer__logo-link {
   display: block;
-  padding: 20px 0;
+  padding: 25px 0 15px;
+  padding-right: 1px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 
@@ -52,7 +53,7 @@
 
 .main-footer__social {
   display: flex;
-  justify-content: space-between;
+  column-gap: 25px;
   align-items: center;
   padding: 20px 0;
   margin: 0 auto;
