@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 72px;
+    padding-bottom: 52px;
     border-bottom: none;
     margin-left: 40px;
     margin-right: 40px;
@@ -56,10 +56,17 @@
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
+    column-gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+  }
+}
+
+.form__fild-wrapper .form-field__container {
+  @media (min-width: $tablet-width) {
+    column-gap: 21px;
   }
 }
 
@@ -98,6 +105,10 @@
   background-image: url("../../img/form/mail.svg");
   background-repeat: no-repeat;
   background-position: top 50% right 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }
 
 .form-field__control--email:focus {
@@ -111,6 +122,10 @@
   background-image: url("../../img/form/phone.svg");
   background-repeat: no-repeat;
   background-position: top 50% right 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
 }
 
 .form-field__control:hover {

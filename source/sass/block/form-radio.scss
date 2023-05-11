@@ -27,8 +27,11 @@
   @media (min-width: $tablet-width) {
     border: 1px solid #d9d9d9;
     padding-top: 30px;
+    padding-left: 8px;
+    padding-bottom: 29px;
     margin-left: 60px;
     margin-right: 60px;
+    row-gap: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,7 +130,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 88px;
+    padding-left: 80px;
   }
 }
 
