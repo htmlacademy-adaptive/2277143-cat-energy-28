@@ -49,6 +49,8 @@
   @media (min-width: $desktop-width) {
     overflow: hidden;
     max-height: 180px;
+    padding-left: 10px;
+    padding-top: 5px;
   }
 }
 
@@ -67,6 +69,10 @@
   @media (min-width: $desktop-width) {
     overflow: hidden;
     max-height: 180px;
+    text-align: start;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
 }
 
