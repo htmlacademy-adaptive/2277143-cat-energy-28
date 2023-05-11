@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 75px;
+    padding-bottom: 86px;
   }
 }
 
@@ -68,7 +69,7 @@
 .extra__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    column-gap: 80px;
+    column-gap: 79px;
   }
 }
 
@@ -105,7 +106,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    column-gap: 40px;
+    column-gap: 37px;
     padding: 16px 0 15px 1px;
   }
 }
@@ -126,6 +127,7 @@
     min-width: 613px;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 6px;
     column-gap: 30px;
   }
 }
@@ -178,6 +180,15 @@
     justify-content: space-between;
   }
 }
+
+.extra__price {
+  @media (min-width: $desktop-width) {
+    min-width: 42px;
+    text-align: left;
+  }
+}
+
+
 
 .extra__gift {
   padding: 60px 59px 42px 59px;
@@ -239,6 +250,10 @@
     font-weight: 400;
     text-align: left;
     padding-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
