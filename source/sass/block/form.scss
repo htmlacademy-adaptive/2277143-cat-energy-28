@@ -9,6 +9,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 62px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 73px;
     padding-bottom: 78px;
   }
