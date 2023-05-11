@@ -16,7 +16,7 @@
 }
 
 .catalog__title {
-  padding-bottom: 40px;
+  padding-bottom: 39px;
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px solid #ebebeb;
@@ -68,7 +68,7 @@
 
 .catalog__item {
   margin: 0;
-  padding: 20px 20px 25px;
+  padding: 20px 20px 24px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
@@ -83,7 +83,7 @@
 }
 
 .catalog__item--more {
-  padding: 25px auto;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     padding: 0 40px 40px;

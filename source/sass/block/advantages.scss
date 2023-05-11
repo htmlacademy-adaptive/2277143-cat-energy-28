@@ -102,8 +102,6 @@
   }
 }
 
-
-
 .advantages__item--benefit::before {
   content: "";
   position: absolute;
@@ -211,7 +209,6 @@
   @media (min-width: $desktop-width) {
     background-position: bottom 11px right 2px;
   }
-
 }
 
 .advantages__item--result::before {
@@ -251,4 +248,3 @@
     display: none;
   }
 }
-
