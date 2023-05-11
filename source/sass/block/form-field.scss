@@ -44,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 13px;
+  column-gap: 10px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -66,10 +66,12 @@
 .form-field__name {
   flex-shrink: 0;
   max-width: 50vh;
+  padding-right: 4px;
 
 
   &--contact {
-    margin-right: 10px;
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 
@@ -91,10 +93,11 @@
 }
 
 .form-field__control--email {
+  padding-left: 15px;
   padding-right: 40px;
   background-image: url("../../img/form/mail.svg");
   background-repeat: no-repeat;
-  background-position: top 50% right 17px;
+  background-position: top 50% right 15px;
 }
 
 .form-field__control--email:focus {
@@ -103,6 +106,7 @@
 }
 
 .form-field__control--tel {
+  padding-left: 15px;
   padding-right: 40px;
   background-image: url("../../img/form/phone.svg");
   background-repeat: no-repeat;

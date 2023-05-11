@@ -18,10 +18,10 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 25px;
+  row-gap: 24px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;

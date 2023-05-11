@@ -25,7 +25,7 @@
     background-color: #ffffff;
     margin-bottom: 35px;
     position: relative;
-    width: 240px;
+    width: 220px;
     margin-left: -20px;
     padding-left: 20px;
 
@@ -44,7 +44,7 @@
     background-color: #ffffff;
     margin-bottom: 37px;
     position: relative;
-    padding-right: 20px;
+    padding-right: 23px;
     width: max-content;
     margin-left: -20px;
     padding-left: 20px;
@@ -65,7 +65,7 @@
     margin-bottom: 40px;
     position: relative;
     width: max-content;
-    padding-right: 20px;
+    padding-right: 23px;
     margin-left: -20px;
     padding-left: 20px;
     max-width: 80%;
@@ -85,7 +85,7 @@
 .form__title--contact::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 33%;
   transform: translateY(-50%);
   width: 100vw;
   height: 2px;
@@ -101,7 +101,7 @@
 .form__title--textarea::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   width: 100vw;
   height: 2px;
@@ -117,7 +117,7 @@
 .form__title--checkbox::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   width: 100vw;
   height: 2px;
