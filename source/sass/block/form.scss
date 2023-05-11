@@ -9,8 +9,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 63px;
-    padding-bottom: 68px;
+    padding-top: 73px;
+    padding-bottom: 78px;
   }
 }
 
@@ -135,7 +135,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 570px 570px;
-    column-gap: 80px;
+    column-gap: 100px;
     justify-content: space-between;
   }
 }
