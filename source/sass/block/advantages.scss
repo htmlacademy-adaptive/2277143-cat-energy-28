@@ -1,15 +1,17 @@
 @use "variables" as *;
 
 .advantages {
-  padding-bottom: 53px;
+  padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
+    padding-top: 25px;
     border-bottom: solid 1px #e6e6e6;
+    padding-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
+    padding-top: 55px;
+    border-bottom: none;
   }
 }
 
@@ -24,6 +26,11 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;
+    padding-left: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -35,7 +42,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 154px;
+    column-gap: 60px;
     row-gap: 37px;
   }
 
@@ -68,6 +75,7 @@
     font-size: 16px;
     line-height: 24px;
     width: 100%;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,14 +89,20 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/index/1.png");
     background-repeat: no-repeat;
-    background-position: 125px 40px;
+    background-position: bottom 14px right 128px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/1@2x.png");
       background-size: 71px 227px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: bottom 14px right 47px;
+  }
 }
+
+
 
 .advantages__item--benefit::before {
   content: "";
@@ -113,12 +127,16 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/index/2.png");
     background-repeat: no-repeat;
-    background-position: 125px 25px;
+    background-position: bottom 15px right 90px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/2@2x.png");
       background-size: 113px 229px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: bottom 14px right 10px;
   }
 }
 
@@ -145,12 +163,16 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/index/3.png");
     background-repeat: no-repeat;
-    background-position: 113px 25px;
+    background-position: bottom 10px right 88px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/3@2x.png");
       background-size: 113px 232px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: bottom 11px right 10px;
   }
 }
 
@@ -177,7 +199,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/index/4.png");
     background-repeat: no-repeat;
-    background-position: 125px 40px;
+    background-position: bottom 14px right 80px;
 
 
     @media (min-resolution: 2dppx) {
@@ -185,6 +207,11 @@
       background-size: 121px 227px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-position: bottom 11px right 2px;
+  }
+
 }
 
 .advantages__item--result::before {
@@ -215,5 +242,13 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    max-width: 245px;
   }
 }
+
+.advantages__description br {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+

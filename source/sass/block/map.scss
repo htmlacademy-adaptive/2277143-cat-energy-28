@@ -45,11 +45,16 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+    max-height: 180px;
+  }
 }
 
 .map__wrapper {
   @media (min-width: $tablet-width) {
-    max-width: 170px;
+    width: 170px;
     font-size: 16px;
     line-height: 20px;
     text-align: end;
@@ -57,6 +62,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+    max-height: 180px;
   }
 }
 
@@ -67,6 +77,11 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .map__yandex {
@@ -78,6 +93,7 @@
 .map__interactive {
   border: none;
   display: block;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     height: 400px;

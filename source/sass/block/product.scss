@@ -123,7 +123,7 @@
 .product__row {
   display: flex;
   justify-content: space-between;
-  height: 14px;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     height: auto;

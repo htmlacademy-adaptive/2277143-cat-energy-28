@@ -21,7 +21,8 @@
     "postcss": "8.3.11",
     "postcss-csso": "^6.0.1",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.11"
+    "stylelint-config-htmlacademy": "0.1.11",
+    "svgo": "^3.0.2"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -51,6 +52,7 @@
   "type": "module",
   "dependencies": {
     "7": "^0.0.1",
+    "gulp-stacksvg": "^2.0.1",
     "terser": "^5.17.1"
   }
 }
