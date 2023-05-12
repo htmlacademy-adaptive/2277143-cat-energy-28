@@ -42,6 +42,7 @@
 }
 
 .form-field__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -73,8 +74,8 @@
 
 .form-field__name {
   flex-shrink: 0;
-  max-width: 50vh;
   padding-right: 4px;
+  max-width: 100%;
 
 
   &--contact {
@@ -89,6 +90,7 @@
   line-height: 18px;
   font-family: inherit;
   flex-grow: 1;
+  width: 50%;
   padding: 13px 11px 12px 20px;
   border: 1px solid #e7e7e7;
   min-width: 130px;
@@ -103,26 +105,56 @@
 .form-field__control--email {
   padding-left: 15px;
   padding-right: 40px;
-  background-image: url("../../img/form/mail.svg");
-  background-repeat: no-repeat;
-  background-position: top 50% right 15px;
 
   @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
 }
 
-.form-field__control--email:focus {
-  background-image: url("../../img/form/mail-green.svg");
-  background-size: 18px 13px;
+.form-field__container--email::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 13px;
+  mask: url("../../img/stake.svg#mail");
+  background-color: #000000;
+  right: 15px;
+  bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 18px;
+    right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 20px;
+    right: 19px;
+  }
+}
+
+.form-field__container--tel::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 15px;
+  mask: url("../../img/stake.svg#phone");
+  background-color: #000000;
+  right: 15px;
+  bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 18px;
+    right: 16px;
+  }
+}
+
+.form-field__container:focus-within::after {
+  background-color: #68b738;
 }
 
 .form-field__control--tel {
   padding-left: 15px;
   padding-right: 40px;
-  background-image: url("../../img/form/phone.svg");
-  background-repeat: no-repeat;
-  background-position: top 50% right 15px;
 
   @media (min-width: $tablet-width) {
     padding-left: 18px;
@@ -140,9 +172,12 @@
   transition: outline 0.05s;
 }
 
+.form-field__container-invalid.form-field__container--email::after {
+  background-color: #ff8282;
+}
 
-.form-field__container-invalid .form-field__control--email {
-  background-image: url("../../img/form/mail-red.svg");
+.form-field__container-invalid.form-field__container--tel::after {
+  background-color: #ff8282;
 }
 
 .form-field__container-invalid .form-field__control {
