@@ -74,16 +74,6 @@ const svg = () =>
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
-  return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'))
-}
-
 const stake = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
@@ -93,7 +83,6 @@ const stake = () => {
     .pipe(rename('stake.svg'))
     .pipe(gulp.dest('build/img'))
 }
-
 
 //Copy
 
@@ -148,7 +137,6 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
     stake,
     createWebp
   ),
@@ -162,7 +150,6 @@ export default gulp.series(
       html,
       styles,
       scripts,
-      sprite,
       stake,
       svg,
       createWebp
