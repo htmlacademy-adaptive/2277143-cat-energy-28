@@ -2,7 +2,7 @@
 
 .example {
   margin: 0;
-  padding: 25px 0 40px;
+  padding: 25px 0 35px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
-    padding: 69px 0 0 0;
+    padding: 23px 0 0 0;
   }
 }
 
@@ -47,12 +47,12 @@
 
 .example__wrapper-info {
   @media (min-width: $tablet-width) {
-    margin-bottom: 104px;
+    margin-bottom: 258px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    padding-bottom: 75px;
+    padding-bottom: 65px;
   }
 }
 
@@ -66,13 +66,14 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding: 0 0 63px 0;
+    padding: 0 0 63px 1px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 76px;
     margin: 0;
+    max-width: 50%;
   }
 }
 
@@ -99,7 +100,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
     margin: 0;
-    width: 576px;
+    width: 572px;
   }
 }
 
@@ -114,7 +115,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: start;
-    gap: 47px;
+    gap: 54px;
     padding-left: 110px;
   }
 }
@@ -122,12 +123,13 @@
 .example__list {
   display: flex;
   justify-content: space-between;
+  column-gap: 15px;
   margin: 0 0 34px 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 51.8%;
     margin-bottom: 0;
   }
 
@@ -142,8 +144,8 @@
   text-align: center;
   border: 1px solid #cfcfcf;
   border-radius: 5%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
@@ -166,7 +168,7 @@
 .example__data {
   padding: 0 15px;
   position: absolute;
-  bottom: -14px;
+  bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #eaeaea;
@@ -175,11 +177,18 @@
   line-height: 12px;
   text-align: center;
   color: #444444;
+  overflow: hidden;
+  max-height: 24px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
+    min-width: 134px;
+    max-width: 300px;
+    max-height: 14px;
+    bottom: -8px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -200,14 +209,15 @@
     align-items: flex-end;
     font-size: 20px;
     line-height: 20px;
-    justify-content: center;
     margin-bottom: 0;
+    justify-content: space-between;
+    padding: 10px 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 80px;
+    column-gap: 65px;
   }
 }
 
@@ -219,10 +229,20 @@
   @media (min-width: $tablet-width) {
     background-color: #eaeaea;
     padding: 0;
+    padding-bottom: 94px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
+    margin-right: 60px;
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.example__slider picture {
+  @media (min-width: $tablet-width) {
+    margin-top: -150px;
   }
 }
 
@@ -242,4 +262,79 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.example__control {
+  width: 4px;
+  height: 256px;
+  border-radius: 2px;
+  border-color: #666666;
+  background-color: #666666;
+  z-index: 1;
+  cursor: col-resize;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+    top: -151px;
+  }
+}
+
+.example__control:hover {
+  background-color: #68b738;
+}
+
+.example__control:hover .example__control-button::after {
+  border-color: transparent transparent transparent #68b738;
+}
+
+.example__control:hover .example__control-button::before {
+  border-color: transparent transparent transparent #68b738;
+}
+
+.example__control:hover .example__control-button {
+  border: 2px solid #68b738;
+}
+
+.example__control:active {
+  opacity: 0.6;
+}
+
+.example__control-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  color: inherit;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: col-resize;
+}
+
+.example__control-button::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 6px;
+  border-style: solid;
+  border-width: 9px 0 9px 8px;
+  border-color: transparent transparent transparent #666666;
+}
+
+.example__control-button::before {
+  content: "";
+  transform: rotate(180deg);
+  right: auto;
+  left: 6px;
+  position: absolute;
+  top: 25%;
+  border-style: solid;
+  border-width: 9px 0 9px 8px;
+  border-color: transparent transparent transparent #666666;
 }

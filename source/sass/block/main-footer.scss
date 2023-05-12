@@ -2,7 +2,7 @@
 
 .main-footer {
   background-color: #f2f2f2;
-  padding: 20px 0;
+  padding: 14px 0 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
@@ -26,40 +26,51 @@
 
 .main-footer__logo-link {
   display: block;
-  padding: 20px 0;
+  padding: 25px 0 15px;
+  padding-right: 3px;
   text-align: center;
   border-bottom: 1px solid #d9d9d9;
 
+
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-top: 4px;
     text-align: center;
-    width: 142px;
+    width: 143px;
+    height: 28px;
     border: none;
   }
 }
 
-.main-footer__logo-image {
-  transition: fill 0.2s;
+.main-footer__svg {
+  transition: opacity 0.3s;
+
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 28px;
+  }
 }
 
-.main-footer__logo-link:hover .main-footer__logo-image {
-  fill: #3e3e3e;
+.main-footer__logo-link:hover .main-footer__svg {
+  opacity: 0.8;
 }
 
-.main-footer__logo-link:active .main-footer__logo-image {
-  fill: #6b6b6b;
+.main-footer__logo-link:active .main-footer__svg {
+  opacity: 0.6;
 }
 
 .main-footer__social {
   display: flex;
-  justify-content: space-between;
+  column-gap: 25px;
   align-items: center;
   padding: 20px 0;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    min-width: 132px;
+    width: 140px;
     padding: 0;
+    padding-left: 14px;
+    padding-top: 3px;
   }
 }
 
@@ -68,11 +79,12 @@
 }
 
 .main-footer__developer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  padding: 20px 0;
+  padding: 30px 0 20px;
   font-family: $second-font;
   font-size: 16px;
   line-height: 19px;
@@ -86,6 +98,7 @@
     min-width: 168px;
     padding: 0;
     border: none;
+    padding-top: 7px;
   }
 }
 
@@ -93,16 +106,31 @@
   display: block;
   padding: 0;
   margin: 0;
+  max-width: 90%;
 }
 
-.main-footer__developer-image {
-  transition: fill 0.2s;
+.main-footer__developer::after {
+  transition: background-color 0.2s, opacity 0.2s;
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: #666666;
+  mask: url("../../img/stake.svg#academy") no-repeat 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 65%;
+  }
 }
 
-.main-footer__developer:hover .main-footer__developer-image {
-  fill: #68b738;
+
+.main-footer__developer:hover::after {
+  background-color: #68b738;
 }
 
-.main-footer__developer:active {
-  opacity: 0.3;
+.main-footer__developer:active::after {
+  opacity: 0.56;
 }

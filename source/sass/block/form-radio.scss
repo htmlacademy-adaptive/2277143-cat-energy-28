@@ -11,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: none;
+    margin-bottom: 71px;
   }
 }
 
@@ -22,13 +23,16 @@
   row-gap: 25px;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
-  padding: 27px 20px;
+  padding: 27px 20px 24px;
 
   @media (min-width: $tablet-width) {
     border: 1px solid #d9d9d9;
     padding-top: 30px;
+    padding-left: 8px;
+    padding-bottom: 29px;
     margin-left: 60px;
     margin-right: 60px;
+    row-gap: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +44,7 @@
 .form-radio__field {
   position: relative;
   cursor: pointer;
+  display: flex;
 }
 
 .form-radio__field:focus-within .form-radio__mark::after {
@@ -121,11 +126,12 @@
 
 .form-radio__name {
   padding-left: 45px;
+  max-width: 85%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 88px;
+    padding-left: 80px;
   }
 }
 

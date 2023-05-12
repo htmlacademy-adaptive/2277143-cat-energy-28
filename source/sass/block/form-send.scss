@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 21px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -17,19 +17,23 @@
   @media (min-width: $desktop-width) {
     justify-content: start;
     margin: 0;
+    column-gap: 80px;
   }
 }
 
 .form__send-btn {
   border: none;
   text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 44px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 17px 20px;
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: 400;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,5 +53,6 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+    padding-bottom: 9px;
   }
 }

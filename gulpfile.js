@@ -12,20 +12,22 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
+import { stacksvg } from "gulp-stacksvg"
+
 
 // Styles
 
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', { sourcemaps: true }) //style.scss
+  return gulp.src('source/sass/style.scss', { sourcemaps: true })
 
-    .pipe(plumber()) //обработка ошибок
-    .pipe(sass().on('error', sass.logError)) //scss в css
-    .pipe(postcss([ //style.css
-      autoprefixer(), // stule.css(c префиксами)
-      csso() //style.css(c префиксами + min)
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' })) //положи в папку
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -68,17 +70,17 @@ const createWebp = () => {
 
 //SVG
 const svg = () =>
-  gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg', '!source/img/sprite.svg'])
+  gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg', '!source/img/sprite.svg', '!source/img/stake.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+const stake = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
-    .pipe(svgstore({
+    .pipe(stacksvg({
       inlineSvg: true
     }))
-    .pipe(rename('sprite.svg'))
+    .pipe(rename('stake.svg'))
     .pipe(gulp.dest('build/img'))
 }
 
@@ -135,7 +137,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    stake,
     createWebp
   ),
 );
@@ -148,7 +150,7 @@ export default gulp.series(
       html,
       styles,
       scripts,
-      sprite,
+      stake,
       svg,
       createWebp
   ),

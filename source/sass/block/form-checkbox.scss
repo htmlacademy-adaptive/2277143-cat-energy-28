@@ -2,7 +2,7 @@
 
 .form-checkbox {
   @media (min-width: $tablet-width) {
-    padding: 0 40px 54px;
+    padding: 0 40px 61px;
     position: relative;
   }
 
@@ -18,26 +18,28 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 25px;
+  row-gap: 24px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    row-gap: 42px;
+    row-gap: 40px;
+    column-gap: 58px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .form-checkbox__field {
   position: relative;
-  display: block;
   cursor: pointer;
+  display: flex;
 }
 
 
@@ -100,6 +102,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 60px;
   }
 }
 

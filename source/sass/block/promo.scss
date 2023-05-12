@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: cover;
-  padding-top: 27px;
+  padding-top: 26px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -20,7 +20,7 @@
     padding-bottom: 70px;
     background-size: 50%;
     color: #000000;
-    margin-bottom: 68px;
+    margin-bottom: 97px;
     position: static;
   }
 }
@@ -31,7 +31,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 302px;
+  height: 301px;
   background-image: url("../img/index/background-cat.png");
   background-color: #64a43c;
   background-repeat: no-repeat;
@@ -67,8 +67,8 @@
 .promo__box {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 472px 540px;
-    grid-template-rows: 202px 72px 54px 100px;
+    grid-template-columns: 495px 580px;
+    grid-template-rows: 160px 72px auto 100px;
   }
 }
 
@@ -77,21 +77,24 @@
   font-size: 36px;
   line-height: 36px;
   padding: 0;
+  padding-left: 1px;
   margin: 0 0 25px 0;
   color: $color-white;
 
   @media (min-width: $tablet-width) {
     color: #000000;
     text-align: left;
-    padding-left: 12%;
+    padding-left: 12.3%;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
     width: 71%;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 0 40px 0;
+    padding-left: 78px;
     width: 100%;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -101,22 +104,26 @@
 
 .promo__slogan {
   line-height: 14px;
-  margin: 0 0 30px 0;
+  font-size: 14px;
+  margin: 0 0 29px 0;
   padding: 0;
+  padding-right: 1px;
   text-transform: uppercase;
   color: $color-white;
 
   @media (min-width: $tablet-width) {
     color: #000000;
     text-align: left;
-    padding-left: 12%;
+    padding-left: 12.6%;
     font-size: 20px;
     line-height: 20px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    padding-left: 78px;
   }
 }
 
@@ -124,7 +131,7 @@
   display: block;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto 2px;
+  margin: 0 auto 3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -143,8 +150,8 @@
     grid-column: 2 / 3;
     grid-row: 1 / 5;
     margin-top: -82px;
-    margin-left: -18px;
-    width: 522px;
+    margin-left: -45px;
+    width: 552px;
     height: 499px;
   }
 }
@@ -155,7 +162,7 @@
   @media (min-width: $tablet-width) {
     width: 245px;
     margin: 0;
-    margin-left: 12%;
+    margin-left: 12.8%;
     font-size: 20px;
     line-height: 20px;
     padding: 17px 5px;
@@ -166,5 +173,6 @@
     padding: 17px 5px;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    margin-left: 80px;
   }
 }
