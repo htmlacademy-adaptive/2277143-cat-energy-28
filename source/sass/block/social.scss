@@ -40,6 +40,22 @@
   opacity: 0.56;
 }
 
+.social__link--vkontakte:focus::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 33px;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(001, 049, 157);
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    top: 60%;
+  }
+}
+
 .social__link--youtube::after {
   transition: background-color 0.2s, opacity 0.2s;
   content: "";
@@ -62,6 +78,23 @@
 
 .social__link--youtube:active::after {
   opacity: 0.56;
+}
+
+.social__link--youtube:focus::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(001, 049, 157);
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    left: 70%;
+    top: 60%;
+  }
 }
 
 .social__link--telegramm::after {
@@ -87,4 +120,21 @@
 
 .social__link--telegramm:active::after {
   opacity: 0.56;
+}
+
+.social__link--telegramm:focus::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgb(001, 049, 157);
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    left: 90%;
+    top: 60%;
+  }
 }

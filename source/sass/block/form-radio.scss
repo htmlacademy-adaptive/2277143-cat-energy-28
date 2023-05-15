@@ -47,10 +47,10 @@
   display: flex;
 }
 
-.form-radio__field:focus-within .form-radio__mark::after {
+.form-radio__control:focus + .form-radio__name + .form-radio__mark::after {
   content: "";
   position: absolute;
-  width: 238px;
+  width: 38px;
   height: 38px;
   top: 50%;
   left: -5px;
@@ -58,13 +58,11 @@
   border: 2px solid rgb(001, 049, 157);
   border-radius: 5px;
 
-
   @media (min-width: $tablet-width) {
-    width: 308px;
-    height: 47px;
+    width: 48px;
+    height: 48px;
   }
 }
-
 
 .form-radio__field:hover .form-radio__mark {
   border: 1px solid #bababa;
