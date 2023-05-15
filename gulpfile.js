@@ -10,7 +10,6 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
-import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
 import { stacksvg } from "gulp-stacksvg"
 
