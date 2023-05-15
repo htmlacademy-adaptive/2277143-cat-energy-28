@@ -50,8 +50,6 @@
   },
   "type": "module",
   "dependencies": {
-    "7": "^0.0.1",
-    "gulp-stacksvg": "^2.0.1",
-    "terser": "^5.17.1"
+    "gulp-stacksvg": "^2.0.1"
   }
 }
