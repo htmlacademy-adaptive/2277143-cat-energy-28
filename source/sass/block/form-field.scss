@@ -36,6 +36,7 @@
 .form__fild-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 80px;
   }
@@ -69,6 +70,10 @@
 .form__fild-wrapper .form-field__container {
   @media (min-width: $tablet-width) {
     column-gap: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 46.7%;
   }
 }
 
